@@ -3,7 +3,7 @@
 
 # This source code is under MIT License 📜 Unauthorized forking, importing, or using this code without giving proper credit will result in legal action ⚠️
  
-# 📩 DM for permission : @TheSigmaCoder
+# 📩 DM for permission : @KURUVI_TELE
 # =======================================================
 
 import asyncio
@@ -58,7 +58,7 @@ async def init():
         pass
     await Sona.decorators()
     LOGGER("SONALI_MUSIC").info(
-        "╔═════ஜ۩۞۩ஜ════╗\n☠︎︎ 𝗠𝗔𝗗𝗘 𝗕𝗬 𝗜𝗦𝗛𝗔 𝗕𝗢𝗧𝗦 ☠︎︎\n╚═════ஜ۩۞۩ஜ════╝"
+        "╔═════ஜ۩۞۩ஜ════╗\n☠︎︎ 𝗠𝗔𝗗𝗘 𝗕𝗬 𝘼𝘼𝙍𝙐 𝗕𝗢𝗧𝗦 ☠︎︎\n╚═════ஜ۩۞۩ஜ════╝"
     )
     await idle()
     await app.stop()
@@ -72,7 +72,7 @@ if __name__ == "__main__":
 # ======================================================
 # ©️ 2025-26 All Rights Reserved by Purvi Bots (Im-Notcoder) 😎
 
-# 🧑‍💻 Developer : t.me/TheSigmaCoder
+# 🧑‍💻 Developer : t.me/itzmekuruvi
 # 🔗 Source link : GitHub.com/Im-Notcoder/Sonali-MusicV2
 # 📢 Telegram channel : t.me/Purvi_Bots
 # =======================================================
