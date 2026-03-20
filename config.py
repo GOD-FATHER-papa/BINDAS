@@ -3,7 +3,7 @@
 
 # This source code is under MIT License 📜 Unauthorized forking, importing, or using this code without giving proper credit will result in legal action ⚠️
  
-# 📩 DM for permission : @TheSigmaCoder
+# 📩 DM for permission : @KURUVI_TELE
 # =======================================================
 
 import re
@@ -23,12 +23,12 @@ BOT_TOKEN = getenv("BOT_TOKEN", "8365441234:AAF3fN6VSK13hHKr0Z3_Cy1YqE8vY8Wo1")
 
 # -------------------- [ OWNER & BOT INFO ] --------------------
 
-OWNER_ID = int(getenv("OWNER_ID", "8238387029"))
-OWNER_USERNAME = getenv("OWNER_USERNAME", "lll_TOXICC_PAPA_lll")
+OWNER_ID = int(getenv("OWNER_ID", "8269636443"))
+OWNER_USERNAME = getenv("OWNER_USERNAME", "itzmekuruvi")
 
-BOT_USERNAME = getenv("BOT_USERNAME", "ishaamusicbot")
+BOT_USERNAME = getenv("BOT_USERNAME", "Aarumusicbot")
 BOT_NAME = getenv("BOT_NAME", "𝐀ᴀʀᴜ ꭙ 𝐌ᴜsɪᴄ˼ ㋛︎")
-ASSUSERNAME = getenv("ASSUSERNAME", "Isha")
+ASSUSERNAME = getenv("ASSUSERNAME", "Aaro")
 
 # -------------------- [ DATABASE / HEROKU / REPO ] --------------------
 
@@ -130,7 +130,7 @@ if SUPPORT_CHAT and not re.match("(?:http|https)://", SUPPORT_CHAT):
 # ======================================================
 # ©️ 2025-26 All Rights Reserved by Purvi Bots (Im-Notcoder) 😎
 
-# 🧑‍💻 Developer : t.me/TheSigmaCoder
+# 🧑‍💻 Developer : t.me/itzmekuruvi
 # 🔗 Source link : GitHub.com/Im-Notcoder/Sonali-MusicV2
 # 📢 Telegram channel : t.me/Purvi_Bots
 # =======================================================
