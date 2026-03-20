@@ -49,7 +49,7 @@ class BUTTONS(object):
     
     PBUTTON = [
         [
-            InlineKeyboardButton("˹ ᴄσηᴛᴧᴄᴛ ˼", url="https://t.me/lll_TOXICC_PAPA_lll"),
+            InlineKeyboardButton("˹ ᴄσηᴛᴧᴄᴛ ˼", url="https://t.me/lll_kuruvibotz_lll"),
             InlineKeyboardButton("⌯ ʙᴧᴄᴋ ⌯", callback_data="MAIN_CP"),
         ]
         ]
