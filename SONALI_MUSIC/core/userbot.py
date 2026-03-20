@@ -29,13 +29,16 @@ class Userbot(Client):
             session_string=str(config.STRING2),
             no_updates=True,
         )
-        self.three = Client(
+        self.three = Cnlient(
             name="SonaAss3",
             api_id=config.API_ID,
-            api_hash=config.API_HASH,           session_string=str(config.STRING3),
+            api_hash=config.API_HASH,           
+            session_string=str(config.STRING3),
             no_updates=True,
-        )
-        self.four = Client(
+           
+       
+         )
+            self.four = Client(
             name="SonaAss4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
@@ -55,8 +58,8 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("ABOUTT_TOXIC")
-                await self.one.join_chat("ISHA_UPDATES")
+                await self.one.join_chat("KURUVI_UPDSTES")
+                await self.one.join_chat("KURUVI_BOTS")
             except:
                 pass
             assistants.append(1)
@@ -76,8 +79,8 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("ABOUTT_TOXIC")
-                await self.one.join_chat("ISHA_UPDATES")
+                await self.two.join_chat("KURUVI_UPDATES")
+                await self.one.join_chat("KURUVI_BOTS")
             except:
                 pass
             assistants.append(2)
