@@ -17,9 +17,9 @@ load_dotenv()
 
 # -------------------- [ BASIC CONFIG ] --------------------
 
-API_ID = int(getenv("API_ID", "30701903"))
-API_HASH = getenv("API_HASH", "157d440684a16ddd3bdec0c80f67c627")
-BOT_TOKEN = getenv("BOT_TOKEN", "8365441234:AAF3fN6VSK13hHKr0Z3_Cy1YqE8vY8Wo1UI")
+API_ID = int(getenv("API_ID", "307019"))
+API_HASH = getenv("API_HASH", "157d440684a16ddd3bdec0c80f67c6")
+BOT_TOKEN = getenv("BOT_TOKEN", "8365441234:AAF3fN6VSK13hHKr0Z3_Cy1YqE8vY8Wo1")
 
 # -------------------- [ OWNER & BOT INFO ] --------------------
 
@@ -32,7 +32,7 @@ ASSUSERNAME = getenv("ASSUSERNAME", "Isha")
 
 # -------------------- [ DATABASE / HEROKU / REPO ] --------------------
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://Toxicbots:TOXIC0000@cluster0.u5sllsx.mongodb.net/?appName=Cluster0")
+MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
@@ -40,7 +40,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/Iam-Toxicc/Isha-Pvt")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
-GIT_TOKEN = getenv("GIT_TOKEN", "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")
+GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # -------------------- [ LOGGER & LINKS ] --------------------
 
@@ -73,7 +73,7 @@ SPOTIFY_CLIENT_SECRET = getenv("SPOTIFY_CLIENT_SECRET", "709e1a2969664491b582008
 
 # -------------------- [ STRING SESSIONS ] --------------------
 
-STRING1 = getenv("STRING_SESSION", "BQHUeU8AUWXMHX5iVZa22L_Wd0B-F4bbwKZXRhYg7-UQJXWDRDjVKBdp81NvOyThpt888ejNqZUTqQ0i37J23hMw7Uho_AtVIqUhUQp3MD2knXUBs_9pYUMkXQyNcWM7pnAiveQ4DEM9KeEEcljmIBXFrYTxWfpqIsQ0cMvMHcJ5-M3OuZZ33j2VTxX7UeaWIhPYLZBODn7PqDNxBF5Vk4pgNFk9KfWg-wCxwYesiYLH9GvRN67RQ7A47MfGbQWBLOps4SunItnmiVFpCp9aqBrPsZjxOe07p5-iiKXipUprCCbIjQG0h5nAn_FDq5gIW7CfqejoZJmukIuRT0DzNXLQSLngHwAAAAHuNQmzAA")
+STRING1 = getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
