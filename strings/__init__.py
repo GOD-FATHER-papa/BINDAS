@@ -46,5 +46,5 @@ for filename in os.listdir(r"./strings/langs/"):
 
 # 🧑‍💻 Developer : t.me/itzmekuruvi
 # 🔗 Source link : GitHub.com/Im-Notcoder/Sonali-MusicV2
-# 📢 Telegram channel : t.me/Purvi_Bots
+# 📢 Telegram channel : t.me/kuruvibotz
 # =======================================================
