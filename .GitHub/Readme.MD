@@ -112,7 +112,7 @@
   </a>  
 
   <!-- Instagram -->    
-  <a href="https://instagram.com/careless__02">  
+  <a href="https://www.instagram.com/faby_tasy">  
     <img src="https://img.shields.io/badge/𝙸ɴѕᴛᴀɢʀᴀᴍ-d62976?style=for-the-badge&logo=instagram&logoColor=white"/>  
   </a>  
 </p>  
