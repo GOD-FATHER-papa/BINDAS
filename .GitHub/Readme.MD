@@ -102,13 +102,13 @@
 
 <p align="center">  
   <!-- Dev -->  
-  <a href="https://t.me/TheSigmaCoder">  
+  <a href="https://t.me/itzmekuruvi">  
     <img src="https://img.shields.io/badge/ᴅᴇᴠ-ᴀʟᴘʜᴀ-ff9800?style=for-the-badge&logo=telegram&logoColor=white"/> 
   </a>  
 
-  <!-- Purvi Bots -->    
-  <a href="https://t.me/purvi_bots">  
-    <img src="https://img.shields.io/badge/ᴘᴜʀᴠ𝙸-%20ʙᴏᴛs-2196f3?style=for-the-badge&logo=telegram&logoColor=white"/> 
+  <!-- kuruvi Bots -->    
+  <a href="https://t.me/kuruvibotz">  
+    <img src="https://img.shields.io/badge/kᴜʀuᴠ𝙸-%20ʙᴏᴛs-2196f3?style=for-the-badge&logo=telegram&logoColor=white"/> 
   </a>  
 
   <!-- Instagram -->    
