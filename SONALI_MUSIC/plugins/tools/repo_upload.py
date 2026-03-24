@@ -104,7 +104,7 @@ async def gitupload(client, message):
                 safe_rm(os.path.join(root, ".git"))
 
         user = g.get_user()
-        repo = user.create_repo(repo_name, private=is_private, description="🎉 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ᴜᴘʟᴏᴀᴅ ʙʏ :- ɪsʜᴀ ʙᴏᴛs 🌺", auto_init=False)
+        repo = user.create_repo(repo_name, private=is_private, description="🎉 sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ᴜᴘʟᴏᴀᴅ ʙʏ :- ᴋᴜʀᴜᴠɪ ʙᴏᴛs 🌺", auto_init=False)
 
         
         run(["git", "init"], cwd=final_path)
@@ -116,9 +116,9 @@ async def gitupload(client, message):
 
         status_out = subprocess.run(["git", "status", "--porcelain"], cwd=final_path, text=True, capture_output=True)
         if status_out.stdout.strip():
-            run(["git", "commit", "-m", "ɪsʜᴀ ʙᴏᴛs !!"], cwd=final_path)
+            run(["git", "commit", "-m", "ᴋᴜʀᴜᴠɪ ʙᴏᴛs !!"], cwd=final_path)
         else:
-            run(["git", "commit", "--allow-empty", "-m", "ɪsʜᴀ ʙᴏᴛs !!"], cwd=final_path)
+            run(["git", "commit", "--allow-empty", "-m", "ᴋᴜʀᴜᴠɪ ʙᴏᴛs !!"], cwd=final_path)
 
         run(["git", "branch", "-M", branch_name], cwd=final_path)
         run(["git", "push", "-u", "origin", branch_name], cwd=final_path)
