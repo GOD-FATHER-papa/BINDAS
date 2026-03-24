@@ -20,7 +20,7 @@ executor = ThreadPoolExecutor(max_workers=3)
 @app.on_message(filters.command(["github", "git"]))
 async def github(_, message):
     if len(message.command) != 2:
-        await message.reply_text("`/git TEAM-ISHA`")
+        await message.reply_text("`/git TEAM-KURUVI`")
         return
 
     username = message.text.split(None, 1)[1]
