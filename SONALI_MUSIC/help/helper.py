@@ -1,9 +1,9 @@
 # =======================================================
-# ©️ 2025-26 All Rights Reserved by Purvi Bots (Im-Notcoder) 🚀
+# ©️ 2025-26 All Rights Reserved by kuruvi Bots (Im-Notcoder) 🚀
 
 # This source code is under MIT License 📜 Unauthorized forking, importing, or using this code without giving proper credit will result in legal action ⚠️
  
-# 📩 DM for permission : @TheSigmaCoder
+# 📩 DM for permission : @KURUVI_TELE
 # =======================================================
 
 
@@ -45,7 +45,7 @@ class Helper(object):
 
 ❍ /reel : ᴅᴏᴡηʟᴏᴧᴅ ɪηѕᴛᴧɢʀᴧϻ ʀєєʟ.
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [⎯᪵፝֟፝֟⎯꯭𓆩꯭ 𝐓 ꯭ᴏ ꯭x ꯭ɪ꯭ ᴄ꯭⎯꯭꯭‌꯭🥂꯭༎꯭ 𓆪](https://t.me/lll_TOXICC_PAPA_lll)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛖ɭꝛ᪳ᷱ𝛖𝐯𝛊𝁜ֶָ֪֯ 𝁘💋](https://t.me/kuruvibotz)**
 '''
     
 
@@ -57,10 +57,10 @@ class Helper(object):
 ᴜsᴀɢᴇ :- ʙᴏᴛ ᴜsᴇʀɴᴀᴍᴇ | ɪᴅ/ᴜsᴇʀɴᴀᴍᴇ | ᴛᴇxᴛ```
 
 
-**» єx :-** `@Aaruxmusic_bot @lll_TOXICC_PAPA_lll I love You 😘`
+**» єx :-** `@Aaru_musicz_bot @itzmekuruvi I love You 😘`
 
 
-**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [⎯᪵፝֟፝֟⎯꯭𓆩꯭ 𝐓 ꯭ᴏ ꯭x ꯭ɪ꯭ ᴄ꯭⎯꯭꯭‌꯭🥂꯭༎꯭ 𓆪](https://t.me/lll_TOXICC_PAPA_lll)**
+**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛖ɭꝛ᪳ᷱ𝛖𝐯𝛊𝁜ֶָ֪֯ 𝁘💋](https://t.me/kuruvibotz)**
 '''
 
 
@@ -75,7 +75,7 @@ class Helper(object):
 ❍ /groupinfo : ɢєᴛ ᴀɴʏ ɢʀσᴜᴘ ɪηғᴏ.
 ❍ /gcstats : ɢєᴛ ʏσᴜʀ ɢʀσᴜᴘ sᴛᴧᴛs.
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [⎯᪵፝֟፝֟⎯꯭𓆩꯭ 𝐓 ꯭ᴏ ꯭x ꯭ɪ꯭ ᴄ꯭⎯꯭꯭‌꯭🥂꯭༎꯭ 𓆪](https://t.me/lll_TOXICC_PAPA_lll)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛖ɭꝛ᪳ᷱ𝛖𝐯𝛊𝁜ֶָ֪֯ 𝁘💋](https://t.me/kuruvibotz)**
 '''
     
 
@@ -103,7 +103,7 @@ class Helper(object):
 ❍ /report : ʀᴇᴘᴏʀᴛ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴs
 ❍ /cancel : ꜱᴛσᴘ ᴧʟʟ ᴛᴧɢ
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [⎯᪵፝֟፝֟⎯꯭𓆩꯭ 𝐓 ꯭ᴏ ꯭x ꯭ɪ꯭ ᴄ꯭⎯꯭꯭‌꯭🥂꯭༎꯭ 𓆪](https://t.me/lll_TOXICC_PAPA_lll)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛖ɭꝛ᪳ᷱ𝛖𝐯𝛊𝁜ֶָ֪֯ 𝁘💋](https://t.me/kuruvibotz)**
 '''
 
 
@@ -121,7 +121,7 @@ class Helper(object):
 ❍ /q : ᴄʀєᴧᴛє ϻєssᴧɢє ǫυσᴛє.
 ❍ /q r : ᴄʀєᴧᴛє ϻєssᴧɢє ǫυσᴛє ᴡɪᴛʜ ʀєᴘʟʏ.
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [⎯᪵፝֟፝֟⎯꯭𓆩꯭ 𝐓 ꯭ᴏ ꯭x ꯭ɪ꯭ ᴄ꯭⎯꯭꯭‌꯭🥂꯭༎꯭ 𓆪](https://t.me/lll_TOXICC_PAPA_lll)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛖ɭꝛ᪳ᷱ𝛖𝐯𝛊𝁜ֶָ֪֯ 𝁘💋](https://t.me/kuruvibotz)**
 '''
 
 
@@ -161,7 +161,7 @@ class Helper(object):
 ```
 ᴛʜɪs ᴄσϻϻᴧηᴅ ᴡɪʟʟ ᴡσʀᴋ σηʟʏ ɪғ ʏσυ ɢɪᴠє ʙᴧη ᴏʀ ɴᴇᴡ ᴀᴅᴍɪɴ ʀɪɢʜᴛs ᴛσ ᴛʜє ʙσᴛ ᴡɪᴛʜ ᴧᴅϻɪη```
 
-**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [⎯᪵፝֟፝֟⎯꯭𓆩꯭ 𝐓 ꯭ᴏ ꯭x ꯭ɪ꯭ ᴄ꯭⎯꯭꯭‌꯭🥂꯭༎꯭ 𓆪](https://t.me/lll_TOXICC_PAPA_lll)**
+**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛖ɭꝛ᪳ᷱ𝛖𝐯𝛊𝁜ֶָ֪֯ 𝁘💋](https://t.me/kuruvibotz)**
 '''
 
 
@@ -190,7 +190,7 @@ class Helper(object):
 ❍ /unbanall : ᴜηʙᴧη ᴧʟʟ ʙᴧη ϻєϻʙєʀs.
 ❍ /unpinall : ᴜηᴘɪη ᴧʟʟ ᴘɪη ᴍєssᴧɢᴇ.**
 
-**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [⎯᪵፝֟፝֟⎯꯭𓆩꯭ 𝐓 ꯭ᴏ ꯭x ꯭ɪ꯭ ᴄ꯭⎯꯭꯭‌꯭🥂꯭༎꯭ 𓆪](https://t.me/lll_TOXICC_PAPA_lll)**
+**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛖ɭꝛ᪳ᷱ𝛖𝐯𝛊𝁜ֶָ֪֯ 𝁘💋](https://t.me/kuruvibotz)**
 '''
 
 
@@ -201,7 +201,7 @@ class Helper(object):
 
 **❍ /sg : ηᴧϻє & υsєʀηᴧϻє ʜɪsᴛσʀʏ.**
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [⎯᪵፝֟፝֟⎯꯭𓆩꯭ 𝐓 ꯭ᴏ ꯭x ꯭ɪ꯭ ᴄ꯭⎯꯭꯭‌꯭🥂꯭༎꯭ 𓆪](https://t.me/lll_TOXICC_PAPA_lll)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛖ɭꝛ᪳ᷱ𝛖𝐯𝛊𝁜ֶָ֪֯ 𝁘💋](https://t.me/kuruvibotz)**
 '''
 
 
@@ -214,7 +214,7 @@ class Helper(object):
 ❍ /allrepo : ᴧʟʟ ʀєᴘᴏ ʙʏ ɢɪᴛ ᴜsєʀηᴧϻє.
 ❍ /dlrepo : ᴅσᴡηʟσᴧᴅ ᴢɪᴘ ʙʏ ʀєᴘᴏ ᴜʀʟ.**
 
-**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [⎯᪵፝֟፝֟⎯꯭𓆩꯭ 𝐓 ꯭ᴏ ꯭x ꯭ɪ꯭ ᴄ꯭⎯꯭꯭‌꯭🥂꯭༎꯭ 𓆪](https://t.me/lll_TOXICC_PAPA_lll)**
+**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛖ɭꝛ᪳ᷱ𝛖𝐯𝛊𝁜ֶָ֪֯ 𝁘💋](https://t.me/kuruvibotz)**
 '''
 
 
@@ -233,9 +233,9 @@ class Helper(object):
 ❍ /tgm : ᴍᴇᴅɪᴀ ᴛᴏ ʟɪɴᴋ.
 ❍ /tr : ᴛʀᴧηꜱʟᴧᴛє ϻυʟᴛɪᴘʟє ʟᴧηɢυᴧɢєs.
 ❍ /bug :- ʀᴇᴘʟʏ ᴛᴏ ᴍᴇssᴀɢᴇ ғᴏʀ ʙᴜɢ ʀᴇᴘᴏʀᴛ.
-❍ /repo :- ɢᴇᴛ ᴛᴇᴀᴍ ᴘᴜʀᴠɪ ʀᴇᴘᴏs.
+❍ /repo :- ɢᴇᴛ ᴛᴇᴀᴍ ᴋᴜʀᴜᴠɪ ʀᴇᴘᴏs.
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [⎯᪵፝֟፝֟⎯꯭𓆩꯭ 𝐓 ꯭ᴏ ꯭x ꯭ɪ꯭ ᴄ꯭⎯꯭꯭‌꯭🥂꯭༎꯭ 𓆪](https://t.me/lll_TOXICC_PAPA_lll)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛖ɭꝛ᪳ᷱ𝛖𝐯𝛊𝁜ֶָ֪֯ 𝁘💋](https://t.me/kuruvibotz)**
 '''
 
 
@@ -271,7 +271,7 @@ class Helper(object):
 ꜱᴇᴛ ᴛʜᴇ ᴀɴᴛɪғʟᴏᴏᴅ ᴀᴄᴛɪᴏɴ ᴛᴏ ᴍᴜᴛᴇ :
 -> /floodmode mute
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [⎯᪵፝֟፝֟⎯꯭𓆩꯭ 𝐓 ꯭ᴏ ꯭x ꯭ɪ꯭ ᴄ꯭⎯꯭꯭‌꯭🥂꯭༎꯭ 𓆪](https://t.me/lll_TOXICC_PAPA_lll)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛖ɭꝛ᪳ᷱ𝛖𝐯𝛊𝁜ֶָ֪֯ 𝁘💋](https://t.me/kuruvibotz)**
 '''
 
     HELP_12 = '''```
@@ -283,7 +283,7 @@ class Helper(object):
 ```
 ⋟ ᴏɴʟʏ ᴀᴅᴍɪɴ ᴄᴀɴ ᴀᴘᴘʀᴏᴠᴇ ᴀɴᴅ ᴅɪsᴍɪss ᴀɴᴅ ᴍᴇss ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ ɪɴ 10 ᴍɪɴᴜᴛᴇs.```
 
-**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [⎯᪵፝֟፝֟⎯꯭𓆩꯭ 𝐓 ꯭ᴏ ꯭x ꯭ɪ꯭ ᴄ꯭⎯꯭꯭‌꯭🥂꯭༎꯭ 𓆪](https://t.me/lll_TOXICC_PAPA_lll)**
+**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛖ɭꝛ᪳ᷱ𝛖𝐯𝛊𝁜ֶָ֪֯ 𝁘💋](https://t.me/kuruvibotz)**
 '''
 
     
@@ -295,7 +295,7 @@ class Helper(object):
 ❍ /spurge : ᴄʟᴇᴀɴ ɢʀᴏᴜᴘ ᴍsɢ sɪʟᴇɴᴛʟʏ.
 ❍ /del : ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍsɢ ғᴏʀ ᴅᴇʟᴇᴛᴇ.
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [⎯᪵፝֟፝֟⎯꯭𓆩꯭ 𝐓 ꯭ᴏ ꯭x ꯭ɪ꯭ ᴄ꯭⎯꯭꯭‌꯭🥂꯭༎꯭ 𓆪](https://t.me/lll_TOXICC_PAPA_lll)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛖ɭꝛ᪳ᷱ𝛖𝐯𝛊𝁜ֶָ֪֯ 𝁘💋](https://t.me/kuruvibotz)**
 '''
 
     
@@ -312,7 +312,7 @@ class Helper(object):
 ❖ ɴᴏᴛᴇ : ɪɴ ᴄᴀꜱᴇ ᴛʜᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴇɴᴅꜱ, ᴛʜᴇ ʙᴏᴛ ᴍᴜꜱᴛ ʜᴀᴠᴇ ᴛʜᴇ ɴᴇᴡ ᴀᴅᴍɪɴ ʀɪɢʜᴛ.
 ```
 
-**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [⎯᪵፝֟፝֟⎯꯭𓆩꯭ 𝐓 ꯭ᴏ ꯭x ꯭ɪ꯭ ᴄ꯭⎯꯭꯭‌꯭🥂꯭༎꯭ 𓆪](https://t.me/lll_TOXICC_PAPA_lll)**
+**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛖ɭꝛ᪳ᷱ𝛖𝐯𝛊𝁜ֶָ֪֯ 𝁘💋](https://t.me/kuruvibotz)**
 '''
 
 
@@ -328,7 +328,7 @@ class Helper(object):
 
 ❍ /nightmode : ɪɴʟɪɴᴇ ᴄᴏɴᴛʀᴏʟs ʙᴜᴛᴛᴏɴ ғᴏʀ ɴɪɢʜᴛ ᴍᴏᴅᴇ.
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [⎯᪵፝֟፝֟⎯꯭𓆩꯭ 𝐓 ꯭ᴏ ꯭x ꯭ɪ꯭ ᴄ꯭⎯꯭꯭‌꯭🥂꯭༎꯭ 𓆪](https://t.me/lll_TOXICC_PAPA_lll)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛖ɭꝛ᪳ᷱ𝛖𝐯𝛊𝁜ֶָ֪֯ 𝁘💋](https://t.me/kuruvibotz)**
 ''' 
     
     
@@ -347,29 +347,29 @@ class Helper(object):
 ─────────────────────────
 ʙєsᴛ ᴧηᴅ ᴄʜєᴧᴘ ɪη ᴛєʟєɢʀᴧϻ 400-500+ ϻєϻʙєʀs ɪη σηє ᴘʀσϻσᴛɪση ɢυʀᴧηᴛєє...
 ─────────────────────────
-❍ ᴄσηᴛᴧᴄᴛ - [⎯᪵፝֟፝֟⎯꯭𓆩꯭ 𝐓 ꯭ᴏ ꯭x ꯭ɪ꯭ ᴄ꯭⎯꯭꯭‌꯭🥂꯭༎꯭ 𓆪](https://t.me/lll_TOXICC_PAPA_lll)
+❍ ᴄσηᴛᴧᴄᴛ - [ᡣ𐭩 ེ𝚱𝛖ɭꝛ᪳ᷱ𝛖𝐯𝛊𝁜ֶָ֪֯ 𝁘💋](https://t.me/kuruvibotz)
 ─────────────────────────**
 '''
     HELP_ABOUT = '''
 **─────────────────────
- ᴡєʟᴄσϻє ᴛσ ˹[ɪꜱʜᴀ ʙᴏᴛs](https://t.me/ISHA_BOTS)˼ sᴛᴧᴛυs
+ ᴡєʟᴄσϻє ᴛσ ˹[ᴋᴜʀᴜᴠɪ ʙᴏᴛs](https://t.me/kuruvibotz)˼ sᴛᴧᴛυs
 ──────────────────────
    ❖ │ ʀєᴧʟ ᴛɪϻє ʙσᴛ's sᴛᴧᴛυs │❖
 ──────────────────────
-╭⎋ [ʏᴏᴜᴛᴜʙᴇ ꭙ ϻυsɪᴄ](https://t.me/ytxmusic_bot) : ᴧʟɪᴠє 
+╭⎋ [ʏᴏᴜᴛᴜʙᴇ ꭙ ϻυsɪᴄ](https://t.me/nica_music_bot) : ᴧʟɪᴠє 
 ╰⊚ υsᴧɢє : 24 ʜʀs | ᴧssɪsᴛᴧηᴛs : 01
        
-╭⎋ [ᴀᴀʀᴜ ꭙ ϻυsɪᴄ](https://t.me/aarumusiccbot) : ᴧʟɪᴠє 
+╭⎋ [ᴀᴀʀᴜ ꭙ ϻυsɪᴄ](https://t.me/Aaru_musicz_bot) : ᴧʟɪᴠє 
 ╰⊚ υsᴧɢє : 24 ʜʀs | ᴧssɪsᴛᴧηᴛs : 01
 
-╭⎋ [ʙᴀᴋᴀ ꭙ ᴄʜᴧᴛ](https://t.me/iam_bakkabot) : ᴧʟɪᴠє 
+╭⎋ [ʙᴀᴋᴀ ꭙ ᴄʜᴧᴛ](https://t.me/+pxvnmnnNcqI2MmY1) : ᴧʟɪᴠє 
 ╰⊚ υsᴧɢє : 24 ʜʀs | ᴧssɪsᴛᴧηᴛs : 01
 ──────────────────────
-⊚ ʙσᴛ sᴛᴧᴛυs & ϻσʀє ʙσᴛs - [ᴄʟɪᴄᴋ ʜєʀє](https://t.me/ISHA_BOTS)
+⊚ ʙσᴛ sᴛᴧᴛυs & ϻσʀє ʙσᴛs - [ᴄʟɪᴄᴋ ʜєʀє](https://t.me/kuruvibotz)
 ──────────────────────
 ⊚ ʟᴧsᴛ ᴄʜєᴄᴋєᴅ ση  : `19.01.2026`
 ──────────────────────
-❍ 𝐏ᴏᴡєʀєᴅ 𝖡ʏ » [⎯᪵፝֟፝֟⎯꯭𓆩꯭ 𝐓 ꯭ᴏ ꯭x ꯭ɪ꯭ ᴄ꯭⎯꯭꯭‌꯭🥂꯭༎꯭ 𓆪](https://t.me/lll_TOXICC_PAPA_lll)
+❍ 𝐏ᴏᴡєʀєᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛖ɭꝛ᪳ᷱ𝛖𝐯𝛊𝁜ֶָ֪֯ 𝁘💋](https://t.me/kuruvibotz)
 ──────────────────────**
 '''
     HELP_ALLBOT = '''
@@ -385,12 +385,12 @@ class Helper(object):
 ● ηᴏ ʟᴀɢ ɪssᴜєs ηᴏ ᴧᴅs ηᴏ ʙᴜɢs.
 ● sᴜᴘᴘᴏʀᴛ ᴧʟʟ ᴛɪϻє sᴛᴧʏ ᴡɪᴛʜ ᴜs.
 ──────────────────────
-❖ υᴘᴅᴧᴛєs ᴄʜᴧηηєʟ » [ɪꜱʜᴀ-ᴜᴘᴅᴧᴛєs](https://t.me/ISHA_UPDATES)
-❖ sυᴘᴘσʀᴛ ᴄʜᴧᴛ » [ɪꜱʜᴀ-sυᴘᴘσʀᴛ](https://t.me/+FZ03qXPymJdlMzdl)
-❖ ɢɪᴛ ʜᴜʙ ʟɪηᴋ » [тєᴧϻ-ɪꜱʜᴀ](github.com/TEAM-ISHA)
+❖ υᴘᴅᴧᴛєs ᴄʜᴧηηєʟ » [ᴋᴜʀᴜᴠɪ-ᴜᴘᴅᴧᴛєs](https://t.me/kuruvibotz)
+❖ sυᴘᴘσʀᴛ ᴄʜᴧᴛ » [ᴋᴜʀᴜᴠɪ-sυᴘᴘσʀᴛ](https://t.me/+pxvnmnnNcqI2MmY1)
+❖ ʀᴇᴘᴏ ʟɪηᴋ » [ᴄʟɪᴄᴋ-ʜᴇʀᴇ](https://files.catbox.moe/94hign.mp4)
 ──────────────────────
-➤ ʙσᴛ sᴛᴧᴛυs & ϻσʀє ʙσᴛs - [ᴄʟɪᴄᴋ ʜєʀє](https://t.me/ISHA_BOTS)
-➤ ᴘᴧɪᴅ ᴘʀσϻσᴛɪση :- [ᴄσηᴛᴧᴄᴛ ʜєʀє](https://t.me/lll_TOXICC_PAPA_lll)
+➤ ʙσᴛ sᴛᴧᴛυs & ϻσʀє ʙσᴛs - [ᴄʟɪᴄᴋ ʜєʀє](https://t.me/itzmekuruvi)
+➤ ᴘᴧɪᴅ ᴘʀσϻσᴛɪση :- [ᴄσηᴛᴧᴄᴛ ʜєʀє](https://t.me/KURUVI_TELE)
 ──────────────────────**
 
 '''
@@ -435,9 +435,9 @@ class Helper(object):
 
 
 # ======================================================
-# ©️ 2025-26 All Rights Reserved by Purvi Bots (Im-Notcoder) 😎
+# ©️ 2025-26 All Rights Reserved by kuruvi Bots (Im-Notcoder) 😎
 
-# 🧑‍💻 Developer : t.me/TheSigmaCoder
+# 🧑‍💻 Developer : https://t.me/kuruvibotz
 # 🔗 Source link : GitHub.com/Im-Notcoder/Sonali-MusicV2
-# 📢 Telegram channel : t.me/Purvi_Bots
+# 📢 Telegram channel : https://t.me/itzmekuruvi
 # =======================================================
