@@ -77,7 +77,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         ],
          [
              InlineKeyboardButton(text="< - 𝟤𝟢ˢ", callback_data="seek_backward_20"),
-             InlineKeyboardButton(text="• ᴏᴡɴᴇʀ •", url=f"https://t.me/Bhool_Bhulaiya_0"),
+             InlineKeyboardButton(text="• ᴏᴡɴᴇʀ •", url=f"https://t.me/+pxvnmnnNcqI2MmY1"),
              InlineKeyboardButton(text="𝟤𝟢ˢ + >", callback_data="seek_forward_20")
          ],
         [
@@ -98,7 +98,7 @@ def stream_markup(_, chat_id):
          ],
         [
              InlineKeyboardButton(text="< - 𝟤𝟢ˢ", callback_data="seek_backward_20"),
-             InlineKeyboardButton(text="• ᴏᴡɴᴇʀ •", url=f"https://t.me/ABOUTT_TOXIC"),
+             InlineKeyboardButton(text="• ᴏᴡɴᴇʀ •", url=f"https://t.me/KURUVI_TELE"),
              InlineKeyboardButton(text="𝟤𝟢ˢ + >", callback_data="seek_forward_20")
          ],
         [
