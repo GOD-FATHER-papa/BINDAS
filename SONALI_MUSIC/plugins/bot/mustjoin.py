@@ -13,7 +13,7 @@ from SONALI_MUSIC import app
 
 #--------------------------
 
-MUST_JOIN = "ISHA_BOTS"
+MUST_JOIN = "KURUVI_BOTS"
 #------------------------
 @app.on_message(filters.incoming & filters.private, group=-1)
 async def must_join_channel(app: Client, msg: Message):
@@ -34,8 +34,8 @@ async def must_join_channel(app: Client, msg: Message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton("• ᴊᴏɪɴ •", url="https://t.me/+mr41Uo_5COViNGM1"),
-                                InlineKeyboardButton("• ᴊᴏɪɴ •", url="https://t.me/ISHA_BOTS"),
+                                InlineKeyboardButton("• ᴊᴏɪɴ •", url="https://t.me/+pxvnmnnNcqI2MmY1"),
+                                InlineKeyboardButton("• ᴊᴏɪɴ •", url="https://t.me/kuruvibotz"),
                             ]
                         ]
                     )
