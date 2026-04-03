@@ -49,7 +49,7 @@ async def start(_, msg):
     ],
     [
         InlineKeyboardButton("• ʙᴀɴᴀʟʟ ʙᴏᴛ •", url="https://github.com/kuruvinetwork-maker/"),
-        InlineKeyboardButton("• ᴀɴʏ ɪssᴜᴇ •", user_id=config.@KURUVI_TELE)
+        InlineKeyboardButton("• ᴀɴʏ ɪssᴜᴇ •", user_id=config.KURUVI_TELE)
     ],
     [
         InlineKeyboardButton("✙ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✙", url=f"https://t.me/{app.username}?startgroup=true")
