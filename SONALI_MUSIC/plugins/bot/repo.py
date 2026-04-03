@@ -20,7 +20,7 @@ start_txt = """**<u>❃ ɪsʜᴀ ʙᴏᴛs ʀєᴘσs ❃</u>
  
 ❉  ʏᴏᴜ ᴄᴧη мʏ ᴜsє ᴘᴜʙʟɪᴄ ʀєᴘσs !! 
 
-✼ || ɢɪᴛ :-  [ᴛᴏxɪᴄ-ʙᴧʙʏ](https://github.com/TEAM-ISHA) ||
+✼ || ɢɪᴛ :-  [ᴋᴜʀᴜᴠɪ-ʙᴧʙʏ](https://github.com/kuruvinetwork-maker/) ||
  
 ❊ ʀᴜη 24x7 ʟᴧɢ ϝʀєє ᴡɪᴛʜσᴜᴛ sᴛσᴘ**
 """
@@ -32,24 +32,24 @@ start_txt = """**<u>❃ ɪsʜᴀ ʙᴏᴛs ʀєᴘσs ❃</u>
 async def start(_, msg):
     buttons = [
     [
-        InlineKeyboardButton("• ɪsʜᴀ ᴍᴜsɪᴄ •", url="https://github.com/TEAMPURVI/PURVI_MUSIC"),
-        InlineKeyboardButton("• sᴏɴᴀʟɪ ᴍᴜsɪᴄ •", url="https://github.com/TEAMPURVI/SONALI_MUSIC")
+        InlineKeyboardButton("• ɪsʜᴀ ᴍᴜsɪᴄ •", url="https://github.com/kuruvinetwork-maker/"),
+        InlineKeyboardButton("• sᴏɴᴀʟɪ ᴍᴜsɪᴄ •", url="https://github.com/kuruvinetwork-maker/")
     ],
     [
-        InlineKeyboardButton("• sɪᴍᴘʟᴇ ᴍᴜsɪᴄ •", url="https://github.com/TEAM-ISHA/NORMAL_MUSIC"),
-        InlineKeyboardButton("• ᴄʜᴀᴛ ʙᴏᴛ •", url="https://github.com/TEAMPURVI/PURVI_CHAT")
+        InlineKeyboardButton("• sɪᴍᴘʟᴇ ᴍᴜsɪᴄ •", url="https://github.com/kuruvinetwork-maker/"),
+        InlineKeyboardButton("• ᴄʜᴀᴛ ʙᴏᴛ •", url="https://github.com/kuruvinetwork-maker/")
     ],
     [
-        InlineKeyboardButton("• ᴜsᴇʀ ʙᴏᴛ •", url="https://github.com/TEAMPURVI/ALPHA_USERBOT"),
-        InlineKeyboardButton("• sᴘᴀᴍ ʙᴏᴛ •", url="https://github.com/TEAMPURVI/ALPHA_SPAM")
+        InlineKeyboardButton("• ᴜsᴇʀ ʙᴏᴛ •", url="https://github.com/kuruvinetwork-maker/"),
+        InlineKeyboardButton("• sᴘᴀᴍ ʙᴏᴛ •", url="https://github.com/kuruvinetwork-maker/")
     ],
     [
-        InlineKeyboardButton("• sᴇssɪᴏɴ ʙᴏᴛ •", url="https://github.com/TEAMPURVI/PURVI_STRING"),
-        InlineKeyboardButton("• sᴇssɪᴏɴ ʜᴀᴄᴋ •", url="https://github.com/TEAM-ISHA/STRING_HACK")
+        InlineKeyboardButton("• sᴇssɪᴏɴ ʙᴏᴛ •", url="https://github.com/kuruvinetwork-maker/"),
+        InlineKeyboardButton("• sᴇssɪᴏɴ ʜᴀᴄᴋ •", url="https://github.com/kuruvinetwork-maker/")
     ],
     [
-        InlineKeyboardButton("• ʙᴀɴᴀʟʟ ʙᴏᴛ •", url="https://github.com/TEAM-ISHA/TOXIC_BANALL"),
-        InlineKeyboardButton("• ᴀɴʏ ɪssᴜᴇ •", user_id=config.OWNER_ID)
+        InlineKeyboardButton("• ʙᴀɴᴀʟʟ ʙᴏᴛ •", url="https://github.com/kuruvinetwork-maker/"),
+        InlineKeyboardButton("• ᴀɴʏ ɪssᴜᴇ •", user_id=config.OWNER_ID)@KURUVI_TELE
     ],
     [
         InlineKeyboardButton("✙ ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ ✙", url=f"https://t.me/{app.username}?startgroup=true")
