@@ -17,14 +17,14 @@ load_dotenv()
 
 # -------------------- [ BASIC CONFIG ] --------------------
 
-API_ID = int(getenv("API_ID", "307019"))
-API_HASH = getenv("API_HASH", "157d440684a16ddd3bdec0c80f67c6")
-BOT_TOKEN = getenv("BOT_TOKEN", "8365441234:AAF3fN6VSK13hHKr0Z3_Cy1YqE8vY8Wo1")
+API_ID = int(getenv("API_ID", "31658455"))
+API_HASH = getenv("API_HASH", "f475a0d613fd71c84affd7747e1bc382")
+BOT_TOKEN = getenv("BOT_TOKEN", "8698795870:AAHbbDgntjPNke_QD1K1snPhsx5AdOjaBr4")
 
 # -------------------- [ OWNER & BOT INFO ] --------------------
 
 OWNER_ID = int(getenv("OWNER_ID", "8269636443"))
-OWNER_USERNAME = getenv("OWNER_USERNAME", "itzmekuruvi")
+OWNER_USERNAME = getenv("OWNER_USERNAME", "@kuruvi_tele")
 
 BOT_USERNAME = getenv("BOT_USERNAME", "Aarumusicbot")
 BOT_NAME = getenv("BOT_NAME", "𝐀ᴀʀᴜ ꭙ 𝐌ᴜsɪᴄ˼ ㋛︎")
@@ -44,11 +44,11 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # -------------------- [ LOGGER & LINKS ] --------------------
 
-LOGGER_ID = int(getenv("LOGGER_ID", "-1003710837582"))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1003571576045"))
 
 PRIVACY_LINK = getenv("PRIVACY_LINK", "https://telegra.ph/Privacy-Policy-for-YukkiMusic-08-30")
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/ISHA_UPDATES")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Bhool_Bhulaiya_0")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/kuruvibotz")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/kuruvi_intro")
 
 # -------------------- [ LIMITS & TIME SETTINGS ] --------------------
 
