@@ -33,7 +33,7 @@
       },
       "OWNER_ID": {
         "description": "Go @MissRose_Bot And type /id and get The user id of user whom you would like to add as OWNER.",
-        "value": "7473021518",
+        "value": "8269636443",
         "required": true
       },
       "STRING_SESSION": {
