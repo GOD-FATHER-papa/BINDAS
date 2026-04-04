@@ -119,7 +119,7 @@ async def in_help():
         InlineQueryResultArticle(
             title="💒 ᴡʜɪsᴘᴇʀ 💒",
             description=f"@Aaru_Musics_bot [USERNAME / ID] [ YOUR TEXT]",
-            input_message_content=InputTextMessageContent(f"**📍ᴜsᴀɢᴇ :-**\n\n@Aaru_Musics_bot (Target Username or ID) (Your Message).\n\n**Example :-**\n@Aaru_Musics_bot @kuruvi_intro I love You 😘"),
+            input_message_content=InputTextMessageContent(f"**📍ᴜsᴀɢᴇ :-**\n\n@Aaru_Musics_bot (Target Username or ID) (Your Message).\n\n**Example :-**\n@Aaru_Musics_bot @kuruvi_tele I love You 😘"),
             thumb_url="https://files.catbox.moe/ynsu0c.jpg",
             reply_markup=switch_btn
         )
