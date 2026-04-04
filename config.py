@@ -23,7 +23,7 @@ BOT_TOKEN = getenv("BOT_TOKEN", "8698795870:AAHbbDgntjPNke_QD1K1snPhsx5AdOjaBr4"
 
 # -------------------- [ OWNER & BOT INFO ] --------------------
 
-OWNER_ID = int(getenv("OWNER_ID", "8269636443"))
+OWNER_ID = int(getenv("OWNER_ID", "8765809228"))
 OWNER_USERNAME = getenv("OWNER_USERNAME", "@kuruvi_tele")
 
 BOT_USERNAME = getenv("BOT_USERNAME", "Aarumusicbot")
@@ -44,11 +44,11 @@ GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 # -------------------- [ LOGGER & LINKS ] --------------------
 
-LOGGER_ID = int(getenv("LOGGER_ID", "-1003571576045"))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1003723472955"))
 
 PRIVACY_LINK = getenv("PRIVACY_LINK", "https://telegra.ph/Privacy-Policy-for-YukkiMusic-08-30")
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/kuruvibotz")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/kuruvi_intro")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/kuruvisupport")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+5A7KR1VbrVpjYmM1")
 
 # -------------------- [ LIMITS & TIME SETTINGS ] --------------------
 
