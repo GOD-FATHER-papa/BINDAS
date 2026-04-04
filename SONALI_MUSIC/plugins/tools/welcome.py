@@ -209,7 +209,7 @@ async def greet_new_member(_, member: ChatMemberUpdated):
                 [InlineKeyboardButton("ᴀᴅᴅ ᴍᴇ ɪɴ ʏᴏᴜʀ ɢʀᴏᴜᴘ", url=f"https://t.me/{app.username}?startgroup=true")],
                 [
                     InlineKeyboardButton("ᴠɪᴇᴡ ᴜꜱᴇʀ", url=f"tg://openmessage?user_id={user.id}"),
-                    InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/kuruvibotz")
+                    InlineKeyboardButton("ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/kuruvisupport")
                 ]
             ])
         )
