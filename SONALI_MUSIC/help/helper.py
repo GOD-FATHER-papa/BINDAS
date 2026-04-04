@@ -356,13 +356,13 @@ class Helper(object):
 ──────────────────────
    ❖ │ ʀєᴧʟ ᴛɪϻє ʙσᴛ's sᴛᴧᴛυs │❖
 ──────────────────────
-╭⎋ [ʏᴏᴜᴛᴜʙᴇ ꭙ ϻυsɪᴄ](https://t.me/nica_music_bot) : ᴧʟɪᴠє 
+╭⎋ [ʏᴏᴜᴛᴜʙᴇ ꭙ ϻυsɪᴄ](https://t.me/Aaru_Musics_bot) : ᴧʟɪᴠє 
 ╰⊚ υsᴧɢє : 24 ʜʀs | ᴧssɪsᴛᴧηᴛs : 01
        
 ╭⎋ [ᴀᴀʀᴜ ꭙ ϻυsɪᴄ](https://t.me/Aaru_musicz_bot) : ᴧʟɪᴠє 
 ╰⊚ υsᴧɢє : 24 ʜʀs | ᴧssɪsᴛᴧηᴛs : 01
 
-╭⎋ [ʙᴀᴋᴀ ꭙ ᴄʜᴧᴛ](https://t.me/+pxvnmnnNcqI2MmY1) : ᴧʟɪᴠє 
+╭⎋ [ʙᴀᴋᴀ ꭙ ᴄʜᴧᴛ](https://t.me/kuruvisupport) : ᴧʟɪᴠє 
 ╰⊚ υsᴧɢє : 24 ʜʀs | ᴧssɪsᴛᴧηᴛs : 01
 ──────────────────────
 ⊚ ʙσᴛ sᴛᴧᴛυs & ϻσʀє ʙσᴛs - [ᴄʟɪᴄᴋ ʜєʀє](https://t.me/kuruvibotz)
@@ -386,11 +386,11 @@ class Helper(object):
 ● sᴜᴘᴘᴏʀᴛ ᴧʟʟ ᴛɪϻє sᴛᴧʏ ᴡɪᴛʜ ᴜs.
 ──────────────────────
 ❖ υᴘᴅᴧᴛєs ᴄʜᴧηηєʟ » [ᴋᴜʀᴜᴠɪ-ᴜᴘᴅᴧᴛєs](https://t.me/kuruvibotz)
-❖ sυᴘᴘσʀᴛ ᴄʜᴧᴛ » [ᴋᴜʀᴜᴠɪ-sυᴘᴘσʀᴛ](https://t.me/+pxvnmnnNcqI2MmY1)
-❖ ʀᴇᴘᴏ ʟɪηᴋ » [ᴄʟɪᴄᴋ-ʜᴇʀᴇ](https://files.catbox.moe/94hign.mp4)
+❖ sυᴘᴘσʀᴛ ᴄʜᴧᴛ » [ᴋᴜʀᴜᴠɪ-sυᴘᴘσʀᴛ](https://t.me/kuruvisupport)
+❖ ʀᴇᴘᴏ ʟɪηᴋ » [ᴄʟɪᴄᴋ-ʜᴇʀᴇ](https://files.catbox.moe/gcr9uk.mp4)
 ──────────────────────
-➤ ʙσᴛ sᴛᴧᴛυs & ϻσʀє ʙσᴛs - [ᴄʟɪᴄᴋ ʜєʀє](https://t.me/itzmekuruvi)
-➤ ᴘᴧɪᴅ ᴘʀσϻσᴛɪση :- [ᴄσηᴛᴧᴄᴛ ʜєʀє](https://t.me/KURUVI_TELE)
+➤ ʙσᴛ sᴛᴧᴛυs & ϻσʀє ʙσᴛs - [ᴄʟɪᴄᴋ ʜєʀє](https://t.me/kuruvi_botz)
+➤ ᴘᴧɪᴅ ᴘʀσϻσᴛɪση :- [ᴄσηᴛᴧᴄᴛ ʜєʀє](@KURUVI_TELE)
 ──────────────────────**
 
 '''
