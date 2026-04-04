@@ -48,7 +48,7 @@ LOGGER_ID = int(getenv("LOGGER_ID", "-1003723472955"))
 
 PRIVACY_LINK = getenv("PRIVACY_LINK", "https://telegra.ph/Privacy-Policy-for-YukkiMusic-08-30")
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/kuruvisupport")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+5A7KR1VbrVpjYmM1")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/About_Kuruvi")
 
 # -------------------- [ LIMITS & TIME SETTINGS ] --------------------
 
