@@ -102,12 +102,12 @@
 
 <p align="center">  
   <!-- Dev -->  
-  <a href="https://t.me/itzmekuruvi">  
+  <a href="https://t.me/About_Kuruvi">  
     <img src="https://img.shields.io/badge/ᴅᴇᴠ-ᴀʟᴘʜᴀ-ff9800?style=for-the-badge&logo=telegram&logoColor=white"/> 
   </a>  
 
   <!-- kuruvi Bots -->    
-  <a href="https://t.me/kuruvibotz">  
+  <a href="https://t.me/kuruvi_botz">  
     <img src="https://img.shields.io/badge/kᴜʀuᴠ𝙸-%20ʙᴏᴛs-2196f3?style=for-the-badge&logo=telegram&logoColor=white"/> 
   </a>  
 
