@@ -37,14 +37,14 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/Iam-Toxicc/Isha-Pvt")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/kuruvinetwork-maker/Isha-Music")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
 API_URL = getenv("API_URL", "https://api.nexgenbots.xyz") #youtube song url
 VIDEO_API_URL = getenv("VIDEO_API_URL", "https://api.video.nexgenbots.xyz")
-API_KEY = getenv("API_KEY", "30DxNexGenBotsda949e")
+API_KEY = getenv("API_KEY", "30DxNexGenBots2ce87d")
 
 # -------------------- [ LOGGER & LINKS ] --------------------
 
