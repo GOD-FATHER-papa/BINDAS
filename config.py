@@ -42,6 +42,10 @@ UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
 GIT_TOKEN = getenv("GIT_TOKEN", None)
 
+API_URL = getenv("API_URL", "https://api.nexgenbots.xyz") #youtube song url
+VIDEO_API_URL = getenv("VIDEO_API_URL", "https://api.video.nexgenbots.xyz")
+API_KEY = getenv("API_KEY", "30DxNexGenBotsda949e")
+
 # -------------------- [ LOGGER & LINKS ] --------------------
 
 LOGGER_ID = int(getenv("LOGGER_ID", "-1003723472955"))
