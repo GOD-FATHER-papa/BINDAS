@@ -10,8 +10,8 @@ from typing import Union
 from pyrogram.enums import MessageEntityType
 from pyrogram.types import Message
 from py_yt import VideosSearch, Playlist
-from ShashankMusic.utils.database import is_on_off
-from ShashankMusic.utils.formatters import time_to_seconds
+from SONALI_MUSIC.utils.database import is_on_off
+from SONALI_MUSIC.utils.formatters import time_to_seconds
 
 from config import API_URL, VIDEO_API_URL, API_KEY
 
