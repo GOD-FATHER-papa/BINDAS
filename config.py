@@ -24,7 +24,7 @@ BOT_TOKEN = getenv("BOT_TOKEN", "8698795870:AAHbbDgntjPNke_QD1K1snPhsx5AdOjaBr4"
 # -------------------- [ OWNER & BOT INFO ] --------------------
 
 OWNER_ID = int(getenv("OWNER_ID", "8765809228"))
-OWNER_USERNAME = getenv("OWNER_USERNAME", "@kuruvi_tele")
+OWNER_USERNAME = getenv("OWNER_USERNAME", "kuruvi_tele")
 
 BOT_USERNAME = getenv("BOT_USERNAME", "Aarumusicbot")
 BOT_NAME = getenv("BOT_NAME", "𝐀ᴀʀᴜ ꭙ 𝐌ᴜsɪᴄ˼ ㋛︎")
