@@ -56,7 +56,15 @@ def git():
             origin = repo.remote("origin")
         else:
             origin = repo.create_remote("origin", UPSTREAM_REPO)
+
         origin.fetch()
+
+        # ✅ FIX START (branch exist check)
+        if config.UPSTREAM_BRANCH not in [ref.name.split("/")[-1] for ref in origin.refs]:
+            LOGGER(__name__).warning(f"⚠️ Branch '{config.UPSTREAM_BRANCH}' not found in origin. Skipping git setup.")
+            return
+        # ✅ FIX END
+
         repo.create_head(
             config.UPSTREAM_BRANCH,
             origin.refs[config.UPSTREAM_BRANCH],
