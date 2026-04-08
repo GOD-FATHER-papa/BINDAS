@@ -385,7 +385,7 @@ class Helper(object):
 ● ηᴏ ʟᴀɢ ɪssᴜєs ηᴏ ᴧᴅs ηᴏ ʙᴜɢs.
 ● sᴜᴘᴘᴏʀᴛ ᴧʟʟ ᴛɪϻє sᴛᴧʏ ᴡɪᴛʜ ᴜs.
 ──────────────────────
-❖ υᴘᴅᴧᴛєs ᴄʜᴧηηєʟ » [ᴋᴜʀᴜᴠɪ-ᴜᴘᴅᴧᴛєs](https://t.me/kuruvibotz)
+❖ υᴘᴅᴧᴛєs ᴄʜᴧηηєʟ » [ᴋᴜʀᴜᴠɪ-ᴜᴘᴅᴧᴛєs](https://t.me/kuruvi_botz)
 ❖ sυᴘᴘσʀᴛ ᴄʜᴧᴛ » [ᴋᴜʀᴜᴠɪ-sυᴘᴘσʀᴛ](https://t.me/kuruvisupport)
 ❖ ʀᴇᴘᴏ ʟɪηᴋ » [ᴄʟɪᴄᴋ-ʜᴇʀᴇ](https://files.catbox.moe/gcr9uk.mp4)
 ──────────────────────
