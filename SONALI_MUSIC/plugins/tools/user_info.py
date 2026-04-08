@@ -74,7 +74,7 @@ INFO_TEXT = """
 <b>● ᴘʀᴇᴍɪᴜᴍ ➠</b> {premium}
 <b>● ꜱᴄᴀᴍ ➠</b> {scam}
 
-<b>● ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➠ <a href="https://t.me/isha_bots">ɪsʜᴀ-ʙᴏᴛꜱ</a></b>
+<b>● ᴘᴏᴡᴇʀᴇᴅ ʙʏ ➠ <a href="@KURUVI_TELE">ᴋᴜʀᴜᴠɪ-ʙᴏᴛꜱ</a></b>
 """
 
 
