@@ -81,7 +81,7 @@ def aq_markup(_, chat_id):
             ),
             InlineKeyboardButton(
                 text="• ɢʀσᴜᴘ ᴄʜᴧᴛ •",
-                url="https://t.me/+pxvnmnnNcqI2MmY1"
+                url="https://t.me/KURUVI_SUPPORT_CHAT"
             ),
         ],
         [
