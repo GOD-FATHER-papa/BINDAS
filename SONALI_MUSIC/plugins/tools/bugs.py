@@ -79,7 +79,7 @@ async def bugs(_, msg: Message):
                 ),
             )
             await app.send_photo(
-                -1002274422022,
+                -1003979103138,
                 photo="https://files.catbox.moe/1b1wap.jpg",
                 caption=f"{bug_report}",
                 reply_markup=InlineKeyboardMarkup(
