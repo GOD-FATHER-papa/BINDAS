@@ -14,7 +14,7 @@ import aiohttp
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 from youtubesearchpython.__future__ import VideosSearch
 from config import YOUTUBE_IMG_URL
-from KRITIMUSIC import app
+from SONALI_MUSIC import app
 
 CACHE_DIR = "cache"
 os.makedirs(CACHE_DIR, exist_ok=True)
@@ -113,9 +113,9 @@ async def get_thumb(videoid: str, player_username: str = None) -> str:
     draw = ImageDraw.Draw(bg)
 
     try:
-        title_font = ImageFont.truetype("KRITIMUSIC/assets/f.ttf", 32)
-        regular_font = ImageFont.truetype("KRITIMUSIC/assets/font.ttf", 18)
-        shreya_font = ImageFont.truetype("KRITIMUSIC/assets/font.ttf", 26)
+        title_font = ImageFont.truetype("SONALI_MUSIC/assets/f.ttf", 32)
+        regular_font = ImageFont.truetype("SONALI_MUSIC/assets/font.ttf", 18)
+        shreya_font = ImageFont.truetype("SONALI_MUSIC/assets/font.ttf", 26)
     except OSError:
         title_font = regular_font = shreya_font = ImageFont.load_default()
 
@@ -157,7 +157,7 @@ async def get_thumb(videoid: str, player_username: str = None) -> str:
     draw.text((BAR_X + BAR_TOTAL_LEN - (90 if is_live else 60), BAR_Y + 15),
               duration_text, fill="red" if is_live else "black", font=regular_font)
 
-    icons_path = "KRITIMUSIC/assets/play_icons.png"
+    icons_path = "SONALI_MUSIC/assets/play_icons.png"
     if os.path.isfile(icons_path):
         ic = Image.open(icons_path).resize((ICONS_W, ICONS_H)).convert("RGBA")
         r, g, b, a = ic.split()
