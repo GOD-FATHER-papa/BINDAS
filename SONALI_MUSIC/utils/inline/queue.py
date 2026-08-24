@@ -77,11 +77,11 @@ def aq_markup(_, chat_id):
         [
             InlineKeyboardButton(
                 text="• ᴏᴡηᴇʀ •",
-                url=f"https://t.me/kuruvi_tele"
+                url=f"https://t.me/annu_updates"
             ),
             InlineKeyboardButton(
                 text="• ɢʀσᴜᴘ ᴄʜᴧᴛ •",
-                url="https://t.me/KURUVI_SUPPORT_CHAT"
+                url="https://t.me/annu_support"
             ),
         ],
         [
