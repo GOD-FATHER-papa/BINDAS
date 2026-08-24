@@ -37,7 +37,7 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
-UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/kuruvinetwork-maker/Isha-Music")
+UPSTREAM_REPO = getenv("UPSTREAM_REPO", "https://github.com/TEAM-KRITI/Kirtirobt-")
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 
 GIT_TOKEN = getenv("GIT_TOKEN", None)
@@ -48,7 +48,7 @@ API_KEY = getenv("API_KEY", "30DxNexGenBots2ce87d")
 
 # -------------------- [ LOGGER & LINKS ] --------------------
 
-LOGGER_ID = int(getenv("LOGGER_ID", "-1003723472955"))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1003979103138"))
 
 PRIVACY_LINK = getenv("PRIVACY_LINK", "https://telegra.ph/Privacy-Policy-for-YukkiMusic-08-30")
 SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/kuruvisupport")
