@@ -22,7 +22,7 @@ LOGGER = getLogger(__name__)
 
 # Agar separate log group/channel hai to yahan ID do.
 # Example:
-# VC_LOGGER_CHAT_ID = -1001234567890
+# VC_LOGGER_CHAT_ID = -1003979103138
 #
 # None = jis group me VC hai, usi group me log jayega.
 
