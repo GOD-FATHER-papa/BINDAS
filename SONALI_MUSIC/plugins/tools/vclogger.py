@@ -640,21 +640,21 @@ async def get_user_role(
             == ChatMemberStatus.OWNER
         ):
 
-            return "Owner"
+            return "ᴏᴡɴᴇʀ"
 
         if (
             status
             == ChatMemberStatus.ADMINISTRATOR
         ):
 
-            return "Admin"
+            return "ᴀᴅᴍɪɴ"
 
         if (
             status
             == ChatMemberStatus.RESTRICTED
         ):
 
-            return "Restricted"
+            return "ʀᴇsᴛʀɪᴄᴛᴇᴅ"
 
     except Exception as e:
 
@@ -663,7 +663,7 @@ async def get_user_role(
             f"for {user_id}: {e}"
         )
 
-    return "Member"
+    return "ᴍᴇᴍʙᴇʀ"
 
 
 # ==========================================================
@@ -909,7 +909,7 @@ async def send_vc_log(
         if action == "Joined":
 
             tag = (
-                "#JoinVideoChat"
+                "#ᴊᴏɪɴᴠɪᴅᴇᴏᴄʜᴀᴛ"
             )
 
             action_text = (
@@ -919,7 +919,7 @@ async def send_vc_log(
         else:
 
             tag = (
-                "#LeaveVideoChat"
+                "#ʟᴇᴀᴠᴇᴠɪᴅᴇᴏᴄʜᴀᴛ"
             )
 
             action_text = (
@@ -933,17 +933,17 @@ async def send_vc_log(
         log_text = (
             "<blockquote>"
             f"<b>{tag}</b>\n"
-            f"<b>Group ➛</b> "
+            f"<b>ɢʀᴏᴜᴘ ➛</b> "
             f"{group_name}\n"
-            f"<b>Name ➛</b> "
+            f"<b>ɴᴀᴍᴇ ➛</b> "
             f"{name}\n"
-            f"<b>Id ➛</b> "
+            f"<b>ɪᴅ ➛</b> "
             f"{user_id}\n"
-            f"<b>Username ➛</b> "
+            f"<b>ᴜsᴇʀɴᴀᴍᴇ ➛</b> "
             f"{username}\n"
-            f"<b>Action ➛</b> "
+            f"<b>ᴀᴄᴛɪᴏɴ ➛</b> "
             f"{action_text}\n"
-            f"<b>Participants ➛</b> "
+            f"<b>ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛs ➛</b> "
             f"{participants_count}"
             "</blockquote>"
         )
@@ -972,7 +972,7 @@ async def send_vc_log(
                 [
                     [
                         InlineKeyboardButton(
-                            "🎙️ Join VC",
+                            "ᴊᴏɪɴᴇᴅ_ᴠᴄ",
                             url=group_link
                         )
                     ]
