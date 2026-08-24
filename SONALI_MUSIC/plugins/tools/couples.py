@@ -23,7 +23,7 @@ POLICE = [
     [
         InlineKeyboardButton(
             text="• ᴀᴅᴅ ᴍᴇ ʙᴀʙʏ •",
-            url=f"https://t.me/Sonali_Music_bot?startgroup=true",
+            url=f"https://t.me/kirtiprobot?startgroup=true",
         ),
     ],
 ]
