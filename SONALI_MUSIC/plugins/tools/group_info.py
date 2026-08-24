@@ -16,7 +16,7 @@ from asyncio import sleep
 @app.on_message(filters.command("groupinfo", prefixes="/"))
 async def get_group_status(_, message: Message):
     if len(message.command) != 2:
-        await message.reply("**ᴘʀᴏᴠɪᴅᴇ ᴀ ɢʀᴏᴜᴘ ᴜsᴇʀɴᴀᴍᴇ. ᴇxᴀᴍᴘʟᴇ :-** `/groupinfo @Isha_updates`")
+        await message.reply("**ᴘʀᴏᴠɪᴅᴇ ᴀ ɢʀᴏᴜᴘ ᴜsᴇʀɴᴀᴍᴇ. ᴇxᴀᴍᴘʟᴇ :-** `/groupinfo @annu_updates`")
         return
     
     group_username = message.command[1]
