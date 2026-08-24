@@ -1,191 +1,196 @@
-# =======================================================
-# ©️ 2025-26 All Rights Reserved by kuruvi Bots (Im-Notcoder) 🚀
+# ======================================================
+# ©️ 2025-26 All Rights Reserved by Kirti 😎
 
-# This source code is under MIT License 📜 Unauthorized forking, importing, or using this code without giving proper credit will result in legal action ⚠️
- 
-# 📩 DM for permission : @KURUVI_TELE
+# 🧑‍💻 Developer : t.me/lll_APNA_BADNAM_BABY_lll
+# 🔗 Source link : https://github.com/Badnam019
+# 📢 Telegram channel : t.me/lll_APNA_BADNAM_BABY_lll
 # =======================================================
 
 import os
 import re
 import random
-import aiohttp
 import aiofiles
-import traceback
+import aiohttp
+from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
+from youtubesearchpython.__future__ import VideosSearch
+from config import YOUTUBE_IMG_URL
+from KRITIMUSIC import app
 
-from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
-from py_yt import VideosSearch
-from config import TELEGRAM_AUDIO_URL
+CACHE_DIR = "cache"
+os.makedirs(CACHE_DIR, exist_ok=True)
 
+PANEL_W, PANEL_H = 763, 545
+PANEL_X = (1280 - PANEL_W) // 2
+PANEL_Y = 88
+TRANSPARENCY = 170
+INNER_OFFSET = 36
 
-def changeImageSize(maxWidth, maxHeight, image):
-    ratio = min(maxWidth / image.size[0], maxHeight / image.size[1])
-    newSize = (int(image.size[0] * ratio), int(image.size[1] * ratio))
-    return image.resize(newSize, Image.LANCZOS)  
+THUMB_W, THUMB_H = 542, 273
+THUMB_X = PANEL_X + (PANEL_W - THUMB_W) // 2
+THUMB_Y = PANEL_Y + INNER_OFFSET
 
+TITLE_X = 377
+META_X = 377
+TITLE_Y = THUMB_Y + THUMB_H + 10
+META_Y = TITLE_Y + 45
 
-def truncate(text, max_chars=50):
-    words = text.split()
-    text1, text2 = "", ""
-    for word in words:
-        if len(text1 + " " + word) <= max_chars and not text2:
-            text1 += " " + word
-        else:
-            text2 += " " + word
-    return [text1.strip(), text2.strip()]
+BAR_X, BAR_Y = 388, META_Y + 45
+BAR_RED_LEN = 280
+BAR_TOTAL_LEN = 480
 
+ICONS_W, ICONS_H = 415, 45
+ICONS_X = PANEL_X + (PANEL_W - ICONS_W) // 2
+ICONS_Y = BAR_Y + 48
 
-def fit_text(draw, text, max_width, font_path, start_size, min_size):
-    size = start_size
-    while size >= min_size:
-        font = ImageFont.truetype(font_path, size)
-        if draw.textlength(text, font=font) <= max_width:
-            return font
-        size -= 1
-    return ImageFont.truetype(font_path, min_size)
+MAX_TITLE_WIDTH = 580
 
+SHREYA_COLOR = [
+    (188, 250, 152),   
+    (110, 180, 245),   
+    (242, 179, 240),   
+    (249, 255, 158),   
+    (164, 163, 240),
+    (135, 250, 244),
+    (255, 255, 255),
+]
 
-def get_overlay_content_box(overlay_img: Image.Image) -> tuple:
-    
-    alpha = overlay_img.split()[-1]  
-    threshold = 20
-    binary = alpha.point(lambda p: 255 if p > threshold else 0)
-    return binary.getbbox()
-
-
-async def get_thumb(videoid: str):
-    url = f"https://www.youtube.com/watch?v={videoid}"
+def trim_to_width(text: str, font: ImageFont.FreeTypeFont, max_w: int) -> str:
+    ellipsis = "…"
     try:
-        results = VideosSearch(url, limit=1)
-        result = (await results.next())["result"][0]
+        if font.getlength(text) <= max_w:
+            return text
+        for i in range(len(text) - 1, 0, -1):
+            if font.getlength(text[:i] + ellipsis) <= max_w:
+                return text[:i] + ellipsis
+    except AttributeError:
+        return text[:max_w // 10] + "…" if len(text) > max_w // 10 else text
+    return ellipsis
 
-        title = re.sub(r"\W+", " ", result.get("title", "Unsupported Title")).title()
-        duration = result.get("duration", "00:00")
-        thumbnail = result["thumbnails"][0]["url"].split("?")[0]
-        views = result.get("viewCount", {}).get("short", "Unknown Views")
-        channel = result.get("channel", {}).get("name", "Unknown Channel")
+async def get_thumb(videoid: str, player_username: str = None) -> str:
+    if player_username is None:
+        player_username = app.username
 
-      
-        thumb_path = f"cache/thumb{videoid}.png"
-        os.makedirs("cache", exist_ok=True)
-        
-        
-        try:
-            async with aiohttp.ClientSession() as session:
-                async with session.get(thumbnail) as resp:
-                    if resp.status == 200:
-                        async with aiofiles.open(thumb_path, mode="wb") as f:
-                            await f.write(await resp.read())
-            youtube = Image.open(thumb_path)
-        except Exception as e:
-            print(f"[Thumbnail Download Failed] Using default image. Error: {e}")
-            async with aiohttp.ClientSession() as session:
-                async with session.get(TELEGRAM_AUDIO_URL) as resp:
-                    if resp.status == 200:
-                        async with aiofiles.open(thumb_path, mode="wb") as f:
-                            await f.write(await resp.read())
-            youtube = Image.open(thumb_path)
-        
-        image1 = changeImageSize(1280, 720, youtube).convert("RGBA")
+    cache_path = os.path.join(CACHE_DIR, f"{videoid}_v4.png")
+    if os.path.exists(cache_path):
+        return cache_path
 
-       
-        gradient = Image.new("RGBA", image1.size, (0, 0, 0, 255))
-        enhancer = ImageEnhance.Brightness(image1.filter(ImageFilter.GaussianBlur(5)))
-        blurred = enhancer.enhance(0.3)
-        background = Image.alpha_composite(gradient, blurred)
+    try:
+        results = VideosSearch(f"https://www.youtube.com/watch?v={videoid}", limit=1)
+        search_result = await results.next()
+        data = search_result.get("result", [])[0]
+        title = re.sub(r"\W+", " ", data.get("title", "Unsupported Title")).title()
+        thumbnail = data.get("thumbnails", [{}])[0].get("url", YOUTUBE_IMG_URL)
+        duration = data.get("duration")
+        views = data.get("viewCount", {}).get("short", "Unknown Views")
+    except Exception:
+        title, thumbnail, duration, views = "Unsupported Title", YOUTUBE_IMG_URL, None, "Unknown Views"
 
-        draw = ImageDraw.Draw(background)
-        font_path = "SONALI_MUSIC/assets/font3.ttf"
+    is_live = not duration or str(duration).strip().lower() in {"", "live", "live now"}
+    duration_text = "Live" if is_live else duration or "Unknown Mins"
 
-       
-        player = Image.open("SONALI_MUSIC/assets/sona.png").convert("RGBA").resize((1280, 720))
-        overlay_box = get_overlay_content_box(player) 
-        content_x1, content_y1, content_x2, content_y2 = overlay_box
-        background.paste(player, (0, 0), player)
+    thumb_path = os.path.join(CACHE_DIR, f"thumb{videoid}.png")
+    try:
+        async with aiohttp.ClientSession() as session:
+            async with session.get(thumbnail) as resp:
+                if resp.status == 200:
+                    async with aiofiles.open(thumb_path, "wb") as f:
+                        await f.write(await resp.read())
+    except Exception:
+        return YOUTUBE_IMG_URL
 
-        
-        thumb_size = int((content_y2 - content_y1) * 0.55)
-        thumb_x = content_x1 + 76
-        thumb_y = content_y1 + ((content_y2 - content_y1 - thumb_size) // 2) + 40
+    base = Image.open(thumb_path).resize((1280, 720)).convert("RGBA")
+    bg = ImageEnhance.Brightness(base.filter(ImageFilter.BoxBlur(10))).enhance(0.6)
 
-        mask = Image.new('L', (thumb_size, thumb_size), 0)
-        draw_mask = ImageDraw.Draw(mask)
-        radius = int(thumb_size * 0.25)
-        draw_mask.rounded_rectangle([(0, 0), (thumb_size, thumb_size)], radius=radius, fill=255)
+    panel_area = bg.crop((PANEL_X, PANEL_Y, PANEL_X + PANEL_W, PANEL_Y + PANEL_H))
+    random_color = random.choice(SHREYA_COLOR)
+    rgba_color = (*random_color, TRANSPARENCY)
+    overlay = Image.new("RGBA", (PANEL_W, PANEL_H), rgba_color)
+    frosted = Image.alpha_composite(panel_area, overlay)
+    mask = Image.new("L", (PANEL_W, PANEL_H), 0)
+    ImageDraw.Draw(mask).rounded_rectangle((0, 0, PANEL_W, PANEL_H), 50, fill=255)
+    bg.paste(frosted, (PANEL_X, PANEL_Y), mask)
 
-        thumb_square = youtube.resize((thumb_size, thumb_size))
-        thumb_square.putalpha(mask)
-        background.paste(thumb_square, (thumb_x, thumb_y), thumb_square)
+    draw = ImageDraw.Draw(bg)
 
-        
-        text_x = thumb_x + thumb_size + 30
-        title_y = thumb_y + 10
-        info_y = title_y + int(thumb_size * 0.33)
-        duration_y = info_y + int(thumb_size * 0.28) - 10  
-        icons_y = duration_y + 40  
+    try:
+        title_font = ImageFont.truetype("KRITIMUSIC/assets/f.ttf", 32)
+        regular_font = ImageFont.truetype("KRITIMUSIC/assets/font.ttf", 18)
+        shreya_font = ImageFont.truetype("KRITIMUSIC/assets/font.ttf", 26)
+    except OSError:
+        title_font = regular_font = shreya_font = ImageFont.load_default()
 
-        def truncate_text(text, max_chars=30):
-            return (text[:max_chars - 3] + "...") if len(text) > max_chars else text
+    BORDER_SIZE = 6
+    thumb_with_border = Image.new("RGBA", (THUMB_W + 2 * BORDER_SIZE, THUMB_H + 2 * BORDER_SIZE), (255, 255, 255, 0))
 
-        short_title = truncate_text(title, max_chars=20)
-        short_channel = truncate_text(channel, max_chars=20)
+    border_mask = Image.new("L", (THUMB_W + 2 * BORDER_SIZE, THUMB_H + 2 * BORDER_SIZE), 0)
+    ImageDraw.Draw(border_mask).rounded_rectangle(
+        (0, 0, THUMB_W + 2 * BORDER_SIZE, THUMB_H + 2 * BORDER_SIZE), 25, fill=255
+    )
+    ImageDraw.Draw(thumb_with_border).rounded_rectangle(
+        (0, 0, THUMB_W + 2 * BORDER_SIZE, THUMB_H + 2 * BORDER_SIZE), 25, fill=(255, 255, 255, 255)
+    )
 
-       
-        title_font = fit_text(draw, short_title, 600, font_path, 42, 28)
-        info_font = ImageFont.truetype("SONALI_MUSIC/assets/font.ttf", 22)
-        duration_font = ImageFont.truetype("SONALI_MUSIC/assets/font.ttf", 20)
+    thumb = base.resize((THUMB_W, THUMB_H)).convert("RGBA")
+    thumb_mask = Image.new("L", (THUMB_W, THUMB_H), 0)
+    ImageDraw.Draw(thumb_mask).rounded_rectangle((0, 0, THUMB_W, THUMB_H), 20, fill=255)
+    thumb_with_border.paste(thumb, (BORDER_SIZE, BORDER_SIZE), thumb_mask)
 
-        
-        draw.text((text_x, title_y), short_title, (255, 255, 255), font=title_font)
-        info_text = f"{short_channel} • {views}"
-        draw.text((text_x, info_y), info_text, (200, 200, 200), font=info_font)
+    bg.paste(thumb_with_border, (THUMB_X - BORDER_SIZE, THUMB_Y - BORDER_SIZE), border_mask)
 
-        
-        duration_text = duration if ":" in duration else f"00:{duration.zfill(2)}"
-        
-       
-        bar_length = 260
-        bar_height = 5
-        bar_x = text_x
-        bar_y = duration_y
-        draw.line([(bar_x, bar_y), (bar_x + bar_length, bar_y)], fill="gray", width=bar_height)
-        draw.line([(bar_x, bar_y), (bar_x + bar_length // 3, bar_y)], fill="red", width=bar_height)
-        # Circle on progress
-        draw.ellipse([(bar_x + bar_length // 3 - 5, bar_y - 5), (bar_x + bar_length // 3 + 5, bar_y + 5)], fill="red")
-        
-        
-        draw.text((bar_x, bar_y + 10), "00:00", fill=(200,200,200), font=duration_font)
-        draw.text((bar_x + bar_length - 40, bar_y + 10), f"{duration_text}", fill=(200,200,200), font=duration_font)
+    draw.text((TITLE_X, TITLE_Y), trim_to_width(title, title_font, MAX_TITLE_WIDTH), fill="black", font=title_font)
 
-        
-        icons_path = "SONALI_MUSIC/assets/play_icons.png"
-        if os.path.isfile(icons_path):
-            icons_img = Image.open(icons_path).convert("RGBA")
-            icons_w, icons_h = icons_img.size
-            scale_factor = 0.4
-            new_size = (int(icons_w*scale_factor), int(icons_h*scale_factor))
-            icons_img = icons_img.resize(new_size, Image.LANCZOS)
-            icons_x = text_x
-            background.paste(icons_img, (icons_x, icons_y), icons_img)
-         
-        try:
-            os.remove(f"cache/thumb{videoid}.png")
-        except:
-            pass
+    left_text = f"YouTube | {views}"
+    right_text = f"Player | @{player_username}"
+    left_w = regular_font.getlength(left_text)
+    right_w = regular_font.getlength(right_text)
+    gap = 30
+    total_width = left_w + gap + right_w
+    start_x = PANEL_X + (PANEL_W - total_width) // 2
 
-        tpath = f"cache/{videoid}.png"
-        background.save(tpath)
-        return tpath
+    draw.text((start_x, META_Y), left_text, fill="red", font=regular_font)
+    draw.text((start_x + left_w + gap, META_Y), right_text, fill="red", font=regular_font)
 
-    except Exception as e:
-        print(f"[get_thumb Error] {e}")
-        traceback.print_exc()
-        return None
+    draw.line([(BAR_X, BAR_Y), (BAR_X + BAR_RED_LEN, BAR_Y)], fill="red", width=6)
+    draw.line([(BAR_X + BAR_RED_LEN, BAR_Y), (BAR_X + BAR_TOTAL_LEN, BAR_Y)], fill="gray", width=5)
+    draw.ellipse([(BAR_X + BAR_RED_LEN - 7, BAR_Y - 7), (BAR_X + BAR_RED_LEN + 7, BAR_Y + 7)], fill="red")
+    draw.text((BAR_X, BAR_Y + 15), "00:00", fill="black", font=regular_font)
+    draw.text((BAR_X + BAR_TOTAL_LEN - (90 if is_live else 60), BAR_Y + 15),
+              duration_text, fill="red" if is_live else "black", font=regular_font)
+
+    icons_path = "KRITIMUSIC/assets/play_icons.png"
+    if os.path.isfile(icons_path):
+        ic = Image.open(icons_path).resize((ICONS_W, ICONS_H)).convert("RGBA")
+        r, g, b, a = ic.split()
+        black_ic = Image.merge("RGBA", (r.point(lambda *_: 0), g.point(lambda *_: 0), b.point(lambda *_: 0), a))
+        bg.paste(black_ic, (ICONS_X, ICONS_Y), black_ic)
+
+    padding = 25
+
+    
+    shashank_text = "POWERD BY:-@IlI_KRITI_OWNER_lll"
+    shashank_x = padding
+    shashank_y = padding
+    draw.text((shashank_x, shashank_y), shashank_text, fill=(255, 255, 0), font=shreya_font)
+
+    shreya_text = "DEV :- @IlI_KRITI_OWNER_lll"
+    shreya_w = shreya_font.getlength(shreya_text)
+    shreya_x = 1280 - shreya_w - padding
+    shreya_y = padding
+    draw.text((shreya_x, shreya_y), shreya_text, fill=(255, 255, 0), font=shreya_font)
+
+
+    try:
+        os.remove(thumb_path)
+    except OSError:
+        pass
+
+    bg.save(cache_path)
+    return cache_path
 
 # ======================================================
-# ©️ 2025-26 All Rights Reserved by Purvi Bots (Im-Notcoder) 😎
+# ©️ 2025-26 All Rights Reserved by Kirti 😎
 
-# 🧑‍💻 Developer : t.me/itzmekuruvi
-# 🔗 Source link : GitHub.com/Im-Notcoder/Sonali-MusicV2
-# 📢 Telegram channel : t.me/kuruvibotz
+# 🧑‍💻 Developer : t.me/lll_APNA_BADNAM_BABY_lll
+# 🔗 Source link : https://github.com/Badnam019
+# 📢 Telegram channel : t.me/lll_APNA_BADNAM_BABY_lll
 # =======================================================
