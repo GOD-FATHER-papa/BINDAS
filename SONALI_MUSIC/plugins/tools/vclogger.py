@@ -1,47 +1,33 @@
-# ==========================================================
-# ©️ VC LOGGER SYSTEM
-# ==========================================================
-
 import asyncio
 from logging import getLogger
 from typing import Dict, Set
 
 from pyrogram import filters
 from pyrogram.enums import ChatMemberStatus
-from pyrogram.types import Message
 from pyrogram.raw import functions
+from pyrogram.types import Message
 
 from SONALI_MUSIC import app
 from SONALI_MUSIC.utils.database import get_assistant
 from SONALI_MUSIC.core.mongo import mongodb
 
 
-# ==========================================================
-# LOGGER
-# ==========================================================
-
 LOGGER = getLogger(__name__)
 
-
 # ==========================================================
-# CONFIG
+# SETTINGS
 # ==========================================================
-
-# None = same group me log send hoga.
-# Separate logger group ke liye:
-#
-# VC_LOGGER_CHAT_ID = -1001234567890
 
 VC_LOGGER_CHAT_ID = None
 
-# Log message kitne seconds baad delete hoga
+# Log 10 seconds baad delete hoga
 VC_LOG_DELETE_AFTER = 10
 
-# Same event ka duplicate log block
+# Duplicate event protection
 VC_LOG_COOLDOWN = 5
 
-# VC participants check interval
-VC_CHECK_INTERVAL = 5
+# Participant check
+VC_CHECK_INTERVAL = 3
 
 
 # ==========================================================
@@ -55,11 +41,9 @@ vcloggerdb = mongodb.vclogger
 # MEMORY
 # ==========================================================
 
-vc_active_users: Dict[int, Set[int]] = {}
-
-active_vc_chats: Set[int] = set()
-
 vc_logging_status: Dict[int, bool] = {}
+
+vc_active_users: Dict[int, Set[int]] = {}
 
 vc_monitor_tasks: Dict[int, asyncio.Task] = {}
 
@@ -67,24 +51,10 @@ vc_log_cooldown = {}
 
 
 # ==========================================================
-# COMMAND PREFIXES
+# SMALL FONT
 # ==========================================================
 
-prefixes = [
-    ".",
-    "!",
-    "/",
-    "@",
-    "?",
-    "'",
-]
-
-
-# ==========================================================
-# SMALL CAPS
-# ==========================================================
-
-def to_small_caps(text):
+def sc(text):
 
     mapping = {
         "a": "ᴀ",
@@ -113,135 +83,44 @@ def to_small_caps(text):
         "x": "x",
         "y": "ʏ",
         "z": "ᴢ",
-
-        "A": "ᴀ",
-        "B": "ʙ",
-        "C": "ᴄ",
-        "D": "ᴅ",
-        "E": "ᴇ",
-        "F": "ꜰ",
-        "G": "ɢ",
-        "H": "ʜ",
-        "I": "ɪ",
-        "J": "ᴊ",
-        "K": "ᴋ",
-        "L": "ʟ",
-        "M": "ᴍ",
-        "N": "ɴ",
-        "O": "ᴏ",
-        "P": "ᴘ",
-        "Q": "ǫ",
-        "R": "ʀ",
-        "S": "s",
-        "T": "ᴛ",
-        "U": "ᴜ",
-        "V": "ᴠ",
-        "W": "ᴡ",
-        "X": "x",
-        "Y": "ʏ",
-        "Z": "ᴢ",
     }
 
     return "".join(
-        mapping.get(char, char)
-        for char in str(text)
+        mapping.get(
+            x.lower(),
+            x
+        )
+        for x in str(text)
     )
 
 
 # ==========================================================
-# LOAD LOGGER STATUS
+# COMMAND FILTER
 # ==========================================================
 
-async def load_vc_logger_status():
+def vclogger_filter():
 
-    try:
-
-        cursor = vcloggerdb.find({})
-
-        enabled_count = 0
-
-        async for doc in cursor:
-
-            chat_id = doc.get("chat_id")
-
-            if chat_id is None:
-                continue
-
-            status = bool(
-                doc.get(
-                    "status",
-                    False
-                )
-            )
-
-            vc_logging_status[
-                chat_id
-            ] = status
-
-            if status:
-
-                enabled_count += 1
-
-                start_vc_monitor(
-                    chat_id
-                )
-
-        LOGGER.info(
-            "Loaded VC logger status for "
-            f"{len(vc_logging_status)} chats"
+    return (
+        filters.command(
+            "vclogger",
+            prefixes=[
+                ".",
+                "!",
+                "/",
+                "@",
+                "?",
+                "'",
+            ]
         )
-
-        LOGGER.info(
-            f"Started {enabled_count} VC monitors"
-        )
-
-    except Exception as e:
-
-        LOGGER.exception(
-            "Error loading VC logger status: "
-            f"{e}"
-        )
+        & filters.group
+    )
 
 
 # ==========================================================
-# SAVE LOGGER STATUS
+# DATABASE STATUS
 # ==========================================================
 
-async def save_vc_logger_status(
-    chat_id: int,
-    status: bool
-):
-
-    try:
-
-        await vcloggerdb.update_one(
-            {
-                "chat_id": chat_id
-            },
-            {
-                "$set": {
-                    "chat_id": chat_id,
-                    "status": bool(status),
-                }
-            },
-            upsert=True,
-        )
-
-    except Exception as e:
-
-        LOGGER.exception(
-            "Error saving VC logger status: "
-            f"{e}"
-        )
-
-
-# ==========================================================
-# GET LOGGER STATUS
-# ==========================================================
-
-async def get_vc_logger_status(
-    chat_id: int
-) -> bool:
+async def get_vc_logger_status(chat_id):
 
     if chat_id in vc_logging_status:
 
@@ -251,16 +130,16 @@ async def get_vc_logger_status(
 
     try:
 
-        doc = await vcloggerdb.find_one(
+        data = await vcloggerdb.find_one(
             {
                 "chat_id": chat_id
             }
         )
 
-        if doc:
+        if data:
 
             status = bool(
-                doc.get(
+                data.get(
                     "status",
                     False
                 )
@@ -275,79 +154,45 @@ async def get_vc_logger_status(
     except Exception as e:
 
         LOGGER.error(
-            "Error getting VC logger status "
-            f"for {chat_id}: {e}"
+            f"VC status read error: {e}"
         )
 
     return False
 
 
-# ==========================================================
-# COMMAND FILTER
-# ==========================================================
-
-def generate_vclogger_filters():
-
-    return (
-        filters.command(
-            "vclogger",
-            prefixes=prefixes
-        )
-        & filters.group
-    )
-
-
-# ==========================================================
-# START MONITOR
-# ==========================================================
-
-def start_vc_monitor(
-    chat_id: int
+async def save_vc_logger_status(
+    chat_id,
+    status
 ):
 
-    task = vc_monitor_tasks.get(
-        chat_id
-    )
+    try:
 
-    if task and not task.done():
-
-        return
-
-    task = asyncio.create_task(
-        check_and_monitor_vc(
-            chat_id
+        await vcloggerdb.update_one(
+            {
+                "chat_id": chat_id
+            },
+            {
+                "$set": {
+                    "chat_id": chat_id,
+                    "status": bool(status)
+                }
+            },
+            upsert=True
         )
-    )
 
-    vc_monitor_tasks[
-        chat_id
-    ] = task
+    except Exception as e:
 
-
-# ==========================================================
-# STOP MONITOR
-# ==========================================================
-
-def stop_vc_monitor(
-    chat_id: int
-):
-
-    task = vc_monitor_tasks.pop(
-        chat_id,
-        None
-    )
-
-    if task and not task.done():
-
-        task.cancel()
+        LOGGER.error(
+            f"VC status save error: {e}"
+        )
 
 
 # ==========================================================
-# VC LOGGER COMMAND
+# COMMAND
 # ==========================================================
 
 @app.on_message(
-    generate_vclogger_filters()
+    vclogger_filter()
 )
 async def vclogger_command(
     _,
@@ -362,15 +207,15 @@ async def vclogger_command(
             message.text or ""
         ).split()
 
-        status = await get_vc_logger_status(
-            chat_id
-        )
-
-        # ==================================================
+        # --------------------------------------------------
         # STATUS
-        # ==================================================
+        # --------------------------------------------------
 
         if len(args) == 1:
+
+            status = await get_vc_logger_status(
+                chat_id
+            )
 
             state = (
                 "ᴇɴᴀʙʟᴇᴅ"
@@ -385,24 +230,23 @@ async def vclogger_command(
                 "╭───────────────\n"
                 f"├ <b>sᴛᴀᴛᴜs</b> ➛ {state}\n"
                 "╰───────────────\n\n"
-                "ᴜsᴇ:\n"
-                f"➜ <b>{prefixes[0]}vclogger on</b>\n"
-                f"➜ <b>{prefixes[0]}vclogger off</b>"
+                "➜ <b>/vclogger on</b>\n"
+                "➜ <b>/vclogger off</b>"
                 "</blockquote>"
             )
 
             return
 
-        # ==================================================
-        # ENABLE
-        # ==================================================
-
         arg = args[1].lower()
+
+        # --------------------------------------------------
+        # ON
+        # --------------------------------------------------
 
         if arg in (
             "on",
             "enable",
-            "yes",
+            "yes"
         ):
 
             vc_logging_status[
@@ -414,9 +258,22 @@ async def vclogger_command(
                 True
             )
 
-            start_vc_monitor(
+            old_task = vc_monitor_tasks.get(
                 chat_id
             )
+
+            if (
+                old_task is None
+                or old_task.done()
+            ):
+
+                vc_monitor_tasks[
+                    chat_id
+                ] = asyncio.create_task(
+                    vc_monitor_supervisor(
+                        chat_id
+                    )
+                )
 
             await message.reply(
                 "<blockquote>"
@@ -424,21 +281,21 @@ async def vclogger_command(
                 "╭───────────────\n"
                 "├ <b>sᴛᴀᴛᴜs</b> ➛ ᴇɴᴀʙʟᴇᴅ\n"
                 "╰───────────────\n\n"
-                "✦ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴊᴏɪɴ/ʟᴇᴀᴠᴇ "
+                "✦ ᴠᴄ ᴊᴏɪɴ/ʟᴇᴀᴠᴇ "
                 "ʟᴏɢɢɪɴɢ ᴀᴄᴛɪᴠᴇ."
                 "</blockquote>"
             )
 
             return
 
-        # ==================================================
-        # DISABLE
-        # ==================================================
+        # --------------------------------------------------
+        # OFF
+        # --------------------------------------------------
 
         if arg in (
             "off",
             "disable",
-            "no",
+            "no"
         ):
 
             vc_logging_status[
@@ -450,17 +307,18 @@ async def vclogger_command(
                 False
             )
 
-            active_vc_chats.discard(
-                chat_id
-            )
-
-            vc_active_users.pop(
+            task = vc_monitor_tasks.pop(
                 chat_id,
                 None
             )
 
-            stop_vc_monitor(
-                chat_id
+            if task and not task.done():
+
+                task.cancel()
+
+            vc_active_users.pop(
+                chat_id,
+                None
             )
 
             await message.reply(
@@ -474,13 +332,9 @@ async def vclogger_command(
 
             return
 
-        # ==================================================
-        # INVALID
-        # ==================================================
-
         await message.reply(
             "<blockquote>"
-            "❌ <b>ɪɴᴠᴀʟɪᴅ ᴀʀɢᴜᴍᴇɴᴛ</b>\n\n"
+            "❌ <b>ɪɴᴠᴀʟɪᴅ</b>\n\n"
             "ᴜsᴇ <b>on</b> ᴏʀ <b>off</b>."
             "</blockquote>"
         )
@@ -488,186 +342,242 @@ async def vclogger_command(
     except Exception as e:
 
         LOGGER.exception(
-            f"Error in vclogger command: {e}"
+            f"VC command error: {e}"
         )
 
 
 # ==========================================================
-# GET GROUP CALL PARTICIPANTS
+# GET ACTIVE CALL
 # ==========================================================
 
-async def get_group_call_participants(
+async def get_active_call(
     userbot,
     peer
 ):
 
     try:
 
-        full_chat = await userbot.invoke(
+        full = await userbot.invoke(
             functions.channels.GetFullChannel(
                 channel=peer
             )
         )
 
-        call = getattr(
-            full_chat.full_chat,
+        return getattr(
+            full.full_chat,
             "call",
             None
         )
 
+    except Exception as e:
+
+        error = str(e).upper()
+
+        if any(
+            x in error
+            for x in (
+                "GROUPCALL_NOT_FOUND",
+                "CALL_NOT_FOUND",
+                "NO_GROUPCALL"
+            )
+        ):
+
+            return None
+
+        LOGGER.error(
+            f"Active call error: {e}"
+        )
+
+        return None
+
+
+# ==========================================================
+# PARTICIPANT PEER → ID
+# ==========================================================
+
+def peer_to_id(peer):
+
+    if not peer:
+        return None
+
+    try:
+
+        user_id = getattr(
+            peer,
+            "user_id",
+            None
+        )
+
+        if user_id:
+            return int(user_id)
+
+        channel_id = getattr(
+            peer,
+            "channel_id",
+            None
+        )
+
+        if channel_id:
+
+            return int(
+                "-100"
+                + str(channel_id)
+            )
+
+        chat_id = getattr(
+            peer,
+            "chat_id",
+            None
+        )
+
+        if chat_id:
+
+            return -int(chat_id)
+
+    except Exception:
+
+        pass
+
+    return None
+
+
+# ==========================================================
+# GET PARTICIPANTS
+# ==========================================================
+
+async def get_vc_users(
+    userbot,
+    peer
+):
+
+    try:
+
+        call = await get_active_call(
+            userbot,
+            peer
+        )
+
         if not call:
 
-            return []
+            return set()
 
-        participants = await userbot.invoke(
-            functions.phone.GetGroupParticipants(
-                call=call,
-                ids=[],
-                sources=[],
-                offset="",
-                limit=100,
+        try:
+
+            result = await userbot.invoke(
+                functions.phone.GetGroupCall(
+                    call=call,
+                    limit=100
+                )
             )
-        )
 
-        return (
-            participants.participants
-            or []
-        )
+            participants = getattr(
+                result,
+                "participants",
+                []
+            )
+
+            users = set()
+
+            for participant in participants:
+
+                if getattr(
+                    participant,
+                    "left",
+                    False
+                ):
+                    continue
+
+                p = getattr(
+                    participant,
+                    "peer",
+                    None
+                )
+
+                user_id = peer_to_id(
+                    p
+                )
+
+                if user_id:
+
+                    users.add(
+                        user_id
+                    )
+
+            return users
+
+        except Exception as e:
+
+            LOGGER.warning(
+                f"GetGroupCall failed: {e}"
+            )
+
+            return set()
 
     except Exception as e:
 
-        error_msg = str(e).upper()
+        error = str(e).upper()
 
-        # ==================================================
-        # FLOOD WAIT
-        # ==================================================
-
-        if "FLOOD_WAIT_" in error_msg:
+        if "FLOOD_WAIT_" in error:
 
             try:
 
-                wait_time = int(
-                    error_msg.split(
+                wait = int(
+                    error.split(
                         "FLOOD_WAIT_"
                     )[1].split("]")[0]
                 )
 
             except Exception:
 
-                wait_time = 10
-
-            LOGGER.warning(
-                f"Flood wait detected: "
-                f"{wait_time}s"
-            )
+                wait = 10
 
             await asyncio.sleep(
-                wait_time + 1
+                wait + 1
             )
 
-            return await get_group_call_participants(
+            return await get_vc_users(
                 userbot,
                 peer
             )
 
-        # ==================================================
-        # NO CALL
-        # ==================================================
-
-        if any(
-            error_name in error_msg
-            for error_name in (
-                "GROUPCALL_NOT_FOUND",
-                "CALL_NOT_FOUND",
-                "NO_GROUPCALL",
-            )
-        ):
-
-            return []
-
-        LOGGER.error(
-            "Error fetching VC participants: "
-            f"{e}"
-        )
-
-        return []
+        return set()
 
 
 # ==========================================================
-# USER FULL NAME
+# USER INFO
 # ==========================================================
 
-def get_user_full_name(
-    user
+async def get_user_info(
+    userbot,
+    user_id
 ):
 
     try:
 
-        first_name = (
-            getattr(
-                user,
-                "first_name",
-                None
-            )
-            or ""
+        return await userbot.get_users(
+            user_id
         )
-
-        last_name = (
-            getattr(
-                user,
-                "last_name",
-                None
-            )
-            or ""
-        )
-
-        name = (
-            f"{first_name} {last_name}"
-            .strip()
-        )
-
-        return name or "ㅤ-"
 
     except Exception:
 
-        return "ㅤ-"
+        try:
 
-
-# ==========================================================
-# USERNAME
-# ==========================================================
-
-def get_user_username(
-    user
-):
-
-    try:
-
-        username = getattr(
-            user,
-            "username",
-            None
-        )
-
-        if username:
-
-            return (
-                f"@{username}"
+            return await app.get_users(
+                user_id
             )
 
-    except Exception:
-        pass
+        except Exception:
 
-    return ""
+            return None
 
 
 # ==========================================================
-# USER ROLE
+# ROLE
 # ==========================================================
 
-async def get_user_role(
-    chat_id: int,
-    user_id: int
+async def get_role(
+    chat_id,
+    user_id
 ):
 
     try:
@@ -677,140 +587,74 @@ async def get_user_role(
             user_id
         )
 
-        status = member.status
-
-        if (
-            status
-            == ChatMemberStatus.OWNER
-        ):
+        if member.status == ChatMemberStatus.OWNER:
 
             return "ᴏᴡɴᴇʀ"
 
         if (
-            status
+            member.status
             == ChatMemberStatus.ADMINISTRATOR
         ):
 
             return "ᴀᴅᴍɪɴ"
 
         if (
-            status
+            member.status
             == ChatMemberStatus.RESTRICTED
         ):
 
             return "ʀᴇsᴛʀɪᴄᴛᴇᴅ"
 
-    except Exception as e:
+    except Exception:
 
-        LOGGER.warning(
-            f"Could not get role "
-            f"for {user_id}: {e}"
-        )
+        pass
 
     return "ᴍᴇᴍʙᴇʀ"
 
 
 # ==========================================================
-# SPAM PROTECTION
-# ==========================================================
-
-async def is_vc_log_allowed(
-    chat_id: int,
-    user_id: int,
-    action: str
-):
-
-    try:
-
-        key = (
-            chat_id,
-            user_id,
-            action
-        )
-
-        now = (
-            asyncio.get_running_loop()
-            .time()
-        )
-
-        last_time = vc_log_cooldown.get(
-            key,
-            0
-        )
-
-        if (
-            now - last_time
-            < VC_LOG_COOLDOWN
-        ):
-
-            return False
-
-        vc_log_cooldown[
-            key
-        ] = now
-
-        if len(
-            vc_log_cooldown
-        ) > 1000:
-
-            expired = [
-                key
-                for key, timestamp
-                in vc_log_cooldown.items()
-                if now - timestamp > 30
-            ]
-
-            for key in expired:
-
-                vc_log_cooldown.pop(
-                    key,
-                    None
-                )
-
-        return True
-
-    except Exception:
-
-        return True
-
-
-# ==========================================================
-# SEND VC LOG
+# SEND LOG
 # ==========================================================
 
 async def send_vc_log(
-    chat_id: int,
-    user_id: int,
-    action: str,
-    participants_count: int,
+    chat_id,
+    user_id,
+    action,
+    count,
     userbot
 ):
 
+    key = (
+        chat_id,
+        user_id,
+        action
+    )
+
+    now = (
+        asyncio.get_running_loop()
+        .time()
+    )
+
+    if (
+        now
+        - vc_log_cooldown.get(
+            key,
+            0
+        )
+        < VC_LOG_COOLDOWN
+    ):
+
+        return
+
+    vc_log_cooldown[
+        key
+    ] = now
+
     try:
 
-        allowed = await is_vc_log_allowed(
-            chat_id,
-            user_id,
-            action
-        )
-
-        if not allowed:
-
-            return
-
-        # ==================================================
-        # LOG DESTINATION
-        # ==================================================
-
-        log_chat_id = (
-            VC_LOGGER_CHAT_ID
-            if VC_LOGGER_CHAT_ID
-            else chat_id
-        )
-
-        # ==================================================
-        # GROUP INFO
-        # ==================================================
+        # --------------------------------------------------
+        # GROUP
+        # --------------------------------------------------
 
         try:
 
@@ -818,73 +662,56 @@ async def send_vc_log(
                 chat_id
             )
 
-            group_name = (
-                getattr(
-                    chat,
-                    "title",
-                    None
-                )
-                or
-                "ᴜɴᴋɴᴏᴡɴ ɢʀᴏᴜᴘ"
+            group = (
+                chat.title
+                or "ᴜɴᴋɴᴏᴡɴ"
             )
 
         except Exception:
 
-            group_name = (
-                "ᴜɴᴋɴᴏᴡɴ ɢʀᴏᴜᴘ"
-            )
+            group = "ᴜɴᴋɴᴏᴡɴ"
 
-        # ==================================================
-        # USER INFO
-        # ==================================================
+        # --------------------------------------------------
+        # USER
+        # --------------------------------------------------
 
-        user = None
-
-        try:
-
-            user = await userbot.get_users(
-                user_id
-            )
-
-        except Exception:
-
-            try:
-
-                user = await app.get_users(
-                    user_id
-                )
-
-            except Exception:
-
-                user = None
+        user = await get_user_info(
+            userbot,
+            user_id
+        )
 
         if user:
 
-            name = get_user_full_name(
-                user
-            )
+            name = (
+                f"{user.first_name or ''} "
+                f"{user.last_name or ''}"
+            ).strip()
 
-            username = get_user_username(
-                user
+            name = name or "ㅤ-"
+
+            username = (
+                f"@{user.username}"
+                if user.username
+                else "ㅤ-"
             )
 
         else:
 
             name = "ㅤ-"
-            username = ""
+            username = "ㅤ-"
 
-        # ==================================================
+        # --------------------------------------------------
         # ROLE
-        # ==================================================
+        # --------------------------------------------------
 
-        role = await get_user_role(
+        role = await get_role(
             chat_id,
             user_id
         )
 
-        # ==================================================
+        # --------------------------------------------------
         # ACTION
-        # ==================================================
+        # --------------------------------------------------
 
         if action == "Joined":
 
@@ -906,185 +733,169 @@ async def send_vc_log(
                 f"ʟᴇꜰᴛ [{role}]"
             )
 
-        # ==================================================
-        # FINAL LOG
-        # ==================================================
+        # --------------------------------------------------
+        # MESSAGE
+        # --------------------------------------------------
 
-        log_text = (
+        text = (
             "<blockquote>"
             f"<b>{tag}</b>\n"
             "╭───────────────\n"
-            f"├ <b>ɢʀᴏᴜᴘ</b> ➛ "
-            f"{group_name}\n"
-            f"├ <b>ɴᴀᴍᴇ</b> ➛ "
-            f"{name}\n"
+            f"├ <b>ɢʀᴏᴜᴘ</b> ➛ {group}\n"
+            f"├ <b>ɴᴀᴍᴇ</b> ➛ {name}\n"
             f"├ <b>ɪᴅ</b> ➛ "
             f"<code>{user_id}</code>\n"
             f"├ <b>ᴜsᴇʀɴᴀᴍᴇ</b> ➛ "
-            f"{username or 'ㅤ-'}\n"
+            f"{username}\n"
             f"├ <b>ᴀᴄᴛɪᴏɴ</b> ➛ "
             f"{action_text}\n"
             f"├ <b>ᴘᴀʀᴛɪᴄɪᴘᴀɴᴛs</b> ➛ "
-            f"{participants_count}\n"
+            f"{count}\n"
             "╰───────────────"
             "</blockquote>"
         )
 
-        # ==================================================
-        # SEND
-        # ==================================================
+        destination = (
+            VC_LOGGER_CHAT_ID
+            if VC_LOGGER_CHAT_ID
+            else chat_id
+        )
+
+        # --------------------------------------------------
+        # NO BUTTON
+        # --------------------------------------------------
 
         sent = await app.send_message(
-            log_chat_id,
-            log_text,
+            destination,
+            text,
             disable_web_page_preview=True
         )
 
-        # ==================================================
-        # DELETE
-        # ==================================================
+        # --------------------------------------------------
+        # DELETE AFTER 10 SEC
+        # --------------------------------------------------
 
-        if VC_LOG_DELETE_AFTER > 0:
+        await asyncio.sleep(
+            VC_LOG_DELETE_AFTER
+        )
 
-            await asyncio.sleep(
-                VC_LOG_DELETE_AFTER
-            )
+        try:
 
-            try:
+            await sent.delete()
 
-                await sent.delete()
+        except Exception:
 
-            except Exception:
-
-                pass
+            pass
 
     except Exception as e:
 
         LOGGER.exception(
-            "Error sending VC log: "
-            f"{e}"
+            f"Send VC log failed: {e}"
         )
 
 
 # ==========================================================
-# GET CURRENT VC USERS
+# ACTUAL MONITOR
 # ==========================================================
 
-async def get_current_vc_users(
-    userbot,
-    peer
+async def monitor_vc(
+    chat_id
 ):
 
-    participants = (
-        await get_group_call_participants(
-            userbot,
-            peer
-        )
-    )
-
-    users = set()
-
-    for participant in participants:
-
-        user_id = getattr(
-            participant,
-            "user_id",
-            None
-        )
-
-        if user_id:
-
-            users.add(
-                user_id
-            )
-
-    return users
-
-
-# ==========================================================
-# MONITOR VC
-# ==========================================================
-
-async def check_and_monitor_vc(
-    chat_id: int
-):
-
-    if chat_id in active_vc_chats:
-
-        return
-
-    active_vc_chats.add(
+    userbot = await get_assistant(
         chat_id
     )
 
-    try:
+    if not userbot:
 
-        # ==================================================
-        # STATUS CHECK
-        # ==================================================
+        LOGGER.warning(
+            f"Assistant unavailable: "
+            f"{chat_id}"
+        )
 
-        if not await get_vc_logger_status(
-            chat_id
+        return
+
+    peer = await userbot.resolve_peer(
+        chat_id
+    )
+
+    old_users = await get_vc_users(
+        userbot,
+        peer
+    )
+
+    vc_active_users[
+        chat_id
+    ] = set(old_users)
+
+    LOGGER.info(
+        f"VC monitor active: "
+        f"{chat_id}"
+    )
+
+    while await get_vc_logger_status(
+        chat_id
+    ):
+
+        current = await get_vc_users(
+            userbot,
+            peer
+        )
+
+        # --------------------------------------------------
+        # JOIN
+        # --------------------------------------------------
+
+        for user_id in (
+            current - old_users
         ):
 
-            return
+            await send_vc_log(
+                chat_id,
+                user_id,
+                "Joined",
+                len(current),
+                userbot
+            )
 
-        # ==================================================
-        # ASSISTANT
-        # ==================================================
+        # --------------------------------------------------
+        # LEAVE
+        # --------------------------------------------------
 
-        userbot = await get_assistant(
-            chat_id
+        for user_id in (
+            old_users - current
+        ):
+
+            await send_vc_log(
+                chat_id,
+                user_id,
+                "Left",
+                len(current),
+                userbot
+            )
+
+        old_users = set(
+            current
         )
-
-        if not userbot:
-
-            LOGGER.warning(
-                f"Assistant not found "
-                f"for {chat_id}"
-            )
-
-            return
-
-        # ==================================================
-        # PEER
-        # ==================================================
-
-        peer = await userbot.resolve_peer(
-            chat_id
-        )
-
-        old_users = set()
-
-        # ==================================================
-        # INITIAL PARTICIPANTS
-        # ==================================================
-
-        try:
-
-            old_users = (
-                await get_current_vc_users(
-                    userbot,
-                    peer
-                )
-            )
-
-        except Exception as e:
-
-            LOGGER.warning(
-                f"Initial VC fetch failed "
-                f"for {chat_id}: {e}"
-            )
-
-            old_users = set()
 
         vc_active_users[
             chat_id
-        ] = old_users
+        ] = set(current)
 
-        # ==================================================
-        # LOOP
-        # ==================================================
+        await asyncio.sleep(
+            VC_CHECK_INTERVAL
+        )
+
+
+# ==========================================================
+# SUPERVISOR
+# ==========================================================
+
+async def vc_monitor_supervisor(
+    chat_id
+):
+
+    try:
 
         while await get_vc_logger_status(
             chat_id
@@ -1092,61 +903,8 @@ async def check_and_monitor_vc(
 
             try:
 
-                current_users = (
-                    await get_current_vc_users(
-                        userbot,
-                        peer
-                    )
-                )
-
-                # ==================================================
-                # JOINED USERS
-                # ==================================================
-
-                joined_users = (
-                    current_users - old_users
-                )
-
-                for user_id in joined_users:
-
-                    await send_vc_log(
-                        chat_id=chat_id,
-                        user_id=user_id,
-                        action="Joined",
-                        participants_count=len(
-                            current_users
-                        ),
-                        userbot=userbot,
-                    )
-
-                # ==================================================
-                # LEFT USERS
-                # ==================================================
-
-                left_users = (
-                    old_users - current_users
-                )
-
-                for user_id in left_users:
-
-                    await send_vc_log(
-                        chat_id=chat_id,
-                        user_id=user_id,
-                        action="Left",
-                        participants_count=len(
-                            current_users
-                        ),
-                        userbot=userbot,
-                    )
-
-                old_users = current_users
-
-                vc_active_users[
+                await monitor_vc(
                     chat_id
-                ] = current_users
-
-                await asyncio.sleep(
-                    VC_CHECK_INTERVAL
                 )
 
             except asyncio.CancelledError:
@@ -1156,33 +914,27 @@ async def check_and_monitor_vc(
             except Exception as e:
 
                 LOGGER.error(
-                    f"VC monitor error "
-                    f"for {chat_id}: {e}"
+                    f"VC monitor stopped "
+                    f"temporarily for "
+                    f"{chat_id}: {e}"
                 )
 
-                await asyncio.sleep(
-                    VC_CHECK_INTERVAL
-                )
+            # Reconnect/restart monitor
+            # instead of permanently dying.
+            if await get_vc_logger_status(
+                chat_id
+            ):
+
+                await asyncio.sleep(3)
 
     except asyncio.CancelledError:
 
         LOGGER.info(
-            f"VC monitor cancelled: "
+            f"VC supervisor cancelled: "
             f"{chat_id}"
         )
 
-    except Exception as e:
-
-        LOGGER.exception(
-            f"VC monitor crashed "
-            f"for {chat_id}: {e}"
-        )
-
     finally:
-
-        active_vc_chats.discard(
-            chat_id
-        )
 
         vc_active_users.pop(
             chat_id,
@@ -1196,12 +948,63 @@ async def check_and_monitor_vc(
 
 
 # ==========================================================
-# STARTUP INITIALIZER
+# LOAD ENABLED GROUPS
 # ==========================================================
 
-async def init_vc_logger():
+async def load_vc_logger_status():
 
-    await load_vc_logger_status()
+    try:
+
+        cursor = vcloggerdb.find({})
+
+        async for doc in cursor:
+
+            chat_id = doc.get(
+                "chat_id"
+            )
+
+            if chat_id is None:
+                continue
+
+            status = bool(
+                doc.get(
+                    "status",
+                    False
+                )
+            )
+
+            vc_logging_status[
+                chat_id
+            ] = status
+
+            if status:
+
+                task = vc_monitor_tasks.get(
+                    chat_id
+                )
+
+                if (
+                    task is None
+                    or task.done()
+                ):
+
+                    vc_monitor_tasks[
+                        chat_id
+                    ] = asyncio.create_task(
+                        vc_monitor_supervisor(
+                            chat_id
+                        )
+                    )
+
+        LOGGER.info(
+            "VC logger status loaded."
+        )
+
+    except Exception as e:
+
+        LOGGER.exception(
+            f"VC logger load error: {e}"
+        )
 
 
 # ==========================================================
