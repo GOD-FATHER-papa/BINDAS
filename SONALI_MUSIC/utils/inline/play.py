@@ -1,17 +1,17 @@
-# =======================================================
-# ©️ 2025-26 All Rights Reserved by Purvi Bots (Im-Notcoder) 🚀
+# ======================================================
+# ©️ 2025-26 All Rights Reserved by Kirti 😎
 
-# This source code is under MIT License 📜 Unauthorized forking, importing, or using this code without giving proper credit will result in legal action ⚠️
- 
-# 📩 DM for permission : @TheSigmaCoder
+# 🧑‍💻 Developer : t.me/lll_APNA_BADNAM_BABY_lll
+# 🔗 Source link : https://github.com/Badnam019
+# 📢 Telegram channel : t.me/lll_APNA_BADNAM_BABY_lll
 # =======================================================
 
 import math
 from config import SUPPORT_CHAT, OWNER_USERNAME
 from pyrogram.types import InlineKeyboardButton, WebAppInfo
-from SONALI_MUSIC import app
+from KRITIMUSIC import app
 import config
-from SONALI_MUSIC.utils.formatters import time_to_seconds
+from KRITIMUSIC.utils.formatters import time_to_seconds
 
 
 def track_markup(_, videoid, user_id, channel, fplay):
@@ -76,9 +76,9 @@ def stream_markup_timer(_, chat_id, played, dur):
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
          [
-             InlineKeyboardButton(text="< - 𝟤𝟢ˢ", callback_data="seek_backward_20"),
-             InlineKeyboardButton(text="• ᴏᴡɴᴇʀ •", url=f"https://t.me/KURUVI_TELE"),
-             InlineKeyboardButton(text="𝟤𝟢ˢ + >", callback_data="seek_forward_20")
+             InlineKeyboardButton(text="< - 𝟤𝟢 s", callback_data="seek_backward_20"),
+             InlineKeyboardButton(text="ᴘʀᴏᴍᴏ", url=f"https://t.me/lll_APNA_BADNAM_BABY_lll?text=𝖧ᴇʏ%20ʙᴀʙʏ%20%20😄%20ɪ%20ᴡᴀɴᴛ%20ᴘᴀɪᴅ%20ᴘʀᴏᴍᴏᴛɪᴏɴ,%20ɢɪᴠᴇ%20ᴍᴇ%20ᴘʀɪᴄᴇ%20ʟɪsᴛ%20😙"),
+             InlineKeyboardButton(text="𝟤𝟢 s + >", callback_data="seek_forward_20")
          ],
         [
             InlineKeyboardButton(text="✙ ʌᴅᴅ ϻє ɪη ʏσυʀ ɢʀσυᴘ ✙", url=f"https://t.me/{app.username}?startgroup=true"),
@@ -97,9 +97,9 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
          ],
         [
-             InlineKeyboardButton(text="< - 𝟤𝟢ˢ", callback_data="seek_backward_20"),
-             InlineKeyboardButton(text="• ᴏᴡɴᴇʀ •", url=f"https://t.me/KURUVI_TELE"),
-             InlineKeyboardButton(text="𝟤𝟢ˢ + >", callback_data="seek_forward_20")
+             InlineKeyboardButton(text="< - 𝟤𝟢 s", callback_data="seek_backward_20"),
+             InlineKeyboardButton(text="ᴘʀᴏᴍᴏ", url=f"https://t.me/lll_APNA_BADNAM_BABY_lll?text=𝖧ᴇʏ%20ʙᴀʙʏ%20%20😄%20ɪ%20ᴡᴀɴᴛ%20ᴘᴀɪᴅ%20ᴘʀᴏᴍᴏᴛɪᴏɴ,%20ɢɪᴠᴇ%20ᴍᴇ%20ᴘʀɪᴄᴇ%20ʟɪsᴛ%20😙"),
+             InlineKeyboardButton(text="𝟤𝟢 s+ >", callback_data="seek_forward_20")
          ],
         [
             InlineKeyboardButton(text="✙ ʌᴅᴅ ϻє ɪη ʏσυʀ ɢʀσυᴘ ✙", url=f"https://t.me/{app.username}?startgroup=true"),
@@ -113,11 +113,11 @@ def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
         [
             InlineKeyboardButton(
                 text=_["P_B_1"],
-                callback_data=f"SonaPlaylists {videoid}|{user_id}|{ptype}|a|{channel}|{fplay}",
+                callback_data=f"MikuPlaylists {videoid}|{user_id}|{ptype}|a|{channel}|{fplay}",
             ),
             InlineKeyboardButton(
                 text=_["P_B_2"],
-                callback_data=f"SonaPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
+                callback_data=f"MikuPlaylists {videoid}|{user_id}|{ptype}|v|{channel}|{fplay}",
             ),
         ],
         [
@@ -180,9 +180,10 @@ def slider_markup(_, videoid, user_id, query, query_type, channel, fplay):
     return buttons
 
 # ======================================================
-# ©️ 2025-26 All Rights Reserved by Purvi Bots (Im-Notcoder) 😎
+# ©️ 2025-26 All Rights Reserved by Kirti 😎
 
-# 🧑‍💻 Developer : t.me/TheSigmaCoder
-# 🔗 Source link : GitHub.com/Im-Notcoder/Sonali-MusicV2
-# 📢 Telegram channel : t.me/Purvi_Bots
+# 🧑‍💻 Developer : t.me/lll_APNA_BADNAM_BABY_lll
+# 🔗 Source link : https://github.com/Badnam019
+# 📢 Telegram channel : t.me/lll_APNA_BADNAM_BABY_lll
 # =======================================================
+
