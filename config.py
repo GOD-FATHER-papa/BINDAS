@@ -51,8 +51,8 @@ API_KEY = getenv("API_KEY", "30DxNexGenBots2ce87d")
 LOGGER_ID = int(getenv("LOGGER_ID", "-1003979103138"))
 
 PRIVACY_LINK = getenv("PRIVACY_LINK", "https://telegra.ph/Privacy-Policy-for-YukkiMusic-08-30")
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/kuruvisupport")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/About_Kuruvi")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/annu_updates")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/annu_support")
 
 # -------------------- [ LIMITS & TIME SETTINGS ] --------------------
 
