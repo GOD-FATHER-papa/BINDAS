@@ -1,11 +1,11 @@
 {
-    "name": "sᴏɴᴀʟɪ ᴍᴜsɪᴄ",
+    "name": "ᴋɪʀᴛɪ ᴍᴜsɪᴄ",
     "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
     "logo": "https://files.catbox.moe/fdkxi4.jpg",
     "keywords": [
     "python3",
     "telegram",
-    "PurviBots",
+    "kirtiBots",
     "MusicBot",
     "telegram-bot",
     "pyrogram"
@@ -28,12 +28,12 @@
       },
       "MONGO_DB_URI": {
         "description": "Get a mongodb url from https://cloud.mongodb.com.",
-        "value": "",
+        "value": "8857291657",
         "required": true
       },
       "OWNER_ID": {
         "description": "Go @MissRose_Bot And type /id and get The user id of user whom you would like to add as OWNER.",
-        "value": "8269636443",
+        "value": "",
         "required": true
       },
       "STRING_SESSION": {
@@ -53,7 +53,7 @@
       },
       "LOGGER_ID": {
         "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
-        "value": "-1003571576045",
+        "value": "-1003979103138",
         "required": true
       }
     },
