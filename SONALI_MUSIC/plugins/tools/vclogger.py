@@ -716,7 +716,7 @@ async def send_vc_log(
         if action == "Joined":
 
             tag = (
-                "❖ #ᴊᴏɪɴᴠɪᴅᴇᴏᴄʜᴀᴛ"
+                "⏤͟͟͞͞ ᴊᴏɪɴ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ ⏤͟͟͞͞"
             )
 
             action_text = (
@@ -726,7 +726,7 @@ async def send_vc_log(
         else:
 
             tag = (
-                "❖ #ʟᴇᴀᴠᴇᴠɪᴅᴇᴏᴄʜᴀᴛ"
+                "⏤͟͟͞͞ ʟᴇᴀᴠᴇ ᴠɪᴅᴇᴏ ᴄʜᴀᴛ ⏤͟͟͞͞"
             )
 
             action_text = (
@@ -741,9 +741,9 @@ async def send_vc_log(
             "<blockquote>"
             f"<b>{tag}</b>\n"
             "╭───────────────\n"
-            f"├ <b>ɢʀᴏᴜᴘ</b> ➛ {group}\n"
-            f"├ <b>ɴᴀᴍᴇ</b> ➛ {name}\n"
-            f"├ <b>ɪᴅ</b> ➛ "
+            f"├ <b>⏤͟͟͞͞ ɢʀᴏᴜᴘ ⏤͟͟͞͞</b> ➛ {group}\n"
+            f"├ <b>⏤͟͟͞͞ ɴᴀᴍᴇ ⏤͟͟͞͞</b> ➛ {name}\n"
+            f"├ <b></b> ➛ "
             f"<code>{user_id}</code>\n"
             f"├ <b>ᴜsᴇʀɴᴀᴍᴇ</b> ➛ "
             f"{username}\n"
