@@ -13,7 +13,7 @@ from SONALI_MUSIC import app
 @app.on_message(filters.command("privacy"))
 async def privacy_command(client: Client, message: Message):
     await message.reply_photo(
-        photo="https://files.catbox.moe/td4esf.jpg",
+        photo="https://d.uguu.se/LbHGyjwp.jpg",
         caption="**➻ ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴋɪʀᴛɪ ʙᴏᴛꜱ ᴘʀɪᴠᴀᴄʏ ᴘᴏʟɪᴄʏ.**\n\n**⊚ ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴇʟᴏᴡ ʙᴜᴛᴛᴏɴ ᴛʜᴇɴ ꜱᴇᴇ ᴘʀɪᴠᴀᴄʏ ᴘᴏʟɪᴄʏ 🔏**",
         reply_markup=InlineKeyboardMarkup(
             [
