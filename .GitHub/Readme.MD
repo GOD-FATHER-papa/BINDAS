@@ -2,14 +2,14 @@
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 </p>
 
-<h1 align="center">─「 ᴀᴀʀᴜ ᴍᴜsɪᴄ 」─</h1>
+<h1 align="center">─「 ᴋɪʀᴛɪ ᴍᴜsɪᴄ 」─</h1>
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif"/>
 </p>
 
 <p align="center">
-  <img src="https://files.catbox.moe/zzkmlv.jpg" width="700"/>
+  <img src="https://d.uguu.se/LbHGyjwp.jpg" width="700"/>
 </p>
 
 ---
