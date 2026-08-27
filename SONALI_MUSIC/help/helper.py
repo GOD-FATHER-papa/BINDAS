@@ -45,7 +45,7 @@ class Helper(object):
 
 ❍ /reel : ᴅᴏᴡηʟᴏᴧᴅ ɪηѕᴛᴧɢʀᴧϻ ʀєєʟ.
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛊ʀᴛɪ ʙᴏᴛꜱ 𝁘💋](https://t.me/annu_updates)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ʀᴏɴᴇʏ ᴍᴜsɪ 𝁘💋]()https://t.me/Bindas_life0**
 '''
     
 
@@ -57,10 +57,10 @@ class Helper(object):
 ᴜsᴀɢᴇ :- ʙᴏᴛ ᴜsᴇʀɴᴀᴍᴇ | ɪᴅ/ᴜsᴇʀɴᴀᴍᴇ | ᴛᴇxᴛ```
 
 
-**» єx :-** `@Kirtiprobot @Only_badnam I love You 😘`
+**» єx :-** `@Tabahi_update_bot @lll_VIP_TABAHI_KING_OF_TG_lll I love You 😘`
 
 
-**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛊ʀᴛɪ ʙᴏᴛꜱ 𝁘💋](https://t.me/annu_updates)**
+**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ ʀᴏɴᴇʏ ᴍᴜsɪᴄ𝁘💋](https://t.me/Bindas_life0)**
 '''
 
 
@@ -75,7 +75,7 @@ class Helper(object):
 ❍ /groupinfo : ɢєᴛ ᴀɴʏ ɢʀσᴜᴘ ɪηғᴏ.
 ❍ /gcstats : ɢєᴛ ʏσᴜʀ ɢʀσᴜᴘ sᴛᴧᴛs.
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛊ʀᴛɪ ʙᴏᴛꜱ 𝁘💋](https://t.me/annu_updates)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ʀᴏɴᴇʏ ᴍᴜsɪᴄ 𝁘💋](https://t.me/Bindas_life0)**
 '''
     
 
@@ -103,7 +103,7 @@ class Helper(object):
 ❍ /report : ʀᴇᴘᴏʀᴛ ɢʀᴏᴜᴘ ᴀᴅᴍɪɴs
 ❍ /cancel : ꜱᴛσᴘ ᴧʟʟ ᴛᴧɢ
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛊ʀᴛɪ ʙᴏᴛꜱ 𝁘💋](https://t.me/annu_updates)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ʀᴏɴᴇʏ ᴍᴜsɪᴄ 𝁘💋](https://t.me/Bindas_life0)**
 '''
 
 
@@ -121,7 +121,7 @@ class Helper(object):
 ❍ /q : ᴄʀєᴧᴛє ϻєssᴧɢє ǫυσᴛє.
 ❍ /q r : ᴄʀєᴧᴛє ϻєssᴧɢє ǫυσᴛє ᴡɪᴛʜ ʀєᴘʟʏ.
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛊ʀᴛɪ ʙᴏᴛꜱ 𝁘💋](https://t.me/annu_updates)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ʀᴏɴᴇʏ ᴍᴜsɪᴄ 𝁘💋](https://t.me/Bindas_life0)**
 '''
 
 
@@ -161,7 +161,7 @@ class Helper(object):
 ```
 ᴛʜɪs ᴄσϻϻᴧηᴅ ᴡɪʟʟ ᴡσʀᴋ σηʟʏ ɪғ ʏσυ ɢɪᴠє ʙᴧη ᴏʀ ɴᴇᴡ ᴀᴅᴍɪɴ ʀɪɢʜᴛs ᴛσ ᴛʜє ʙσᴛ ᴡɪᴛʜ ᴧᴅϻɪη```
 
-**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛊ʀᴛɪ ʙᴏᴛꜱ 𝁘💋](https://t.me/annu_updates)**
+**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ʀᴏɴᴇʏ ᴍᴜsɪᴄ 𝁘💋](https://t.me/Bindas_life0)**
 '''
 
 
@@ -190,7 +190,7 @@ class Helper(object):
 ❍ /unbanall : ᴜηʙᴧη ᴧʟʟ ʙᴧη ϻєϻʙєʀs.
 ❍ /unpinall : ᴜηᴘɪη ᴧʟʟ ᴘɪη ᴍєssᴧɢᴇ.**
 
-**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛊ʀᴛɪ ʙᴏᴛꜱ 𝁘💋](https://t.me/annu_updates)**
+**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ʀᴏɴᴇʏ ᴍᴜsɪᴄ 𝁘💋](https://t.me/Bindas_life0)**
 '''
 
 
@@ -201,7 +201,7 @@ class Helper(object):
 
 **❍ /sg : ηᴧϻє & υsєʀηᴧϻє ʜɪsᴛσʀʏ.**
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛊ʀᴛɪ ʙᴏᴛꜱ 𝁘💋](https://t.me/annu_updates)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ʀᴏɴᴇʏ ᴍᴜsɪᴄ 𝁘💋]()https://t.me/Bindas_life0**
 '''
 
 
@@ -214,7 +214,7 @@ class Helper(object):
 ❍ /allrepo : ᴧʟʟ ʀєᴘᴏ ʙʏ ɢɪᴛ ᴜsєʀηᴧϻє.
 ❍ /dlrepo : ᴅσᴡηʟσᴧᴅ ᴢɪᴘ ʙʏ ʀєᴘᴏ ᴜʀʟ.**
 
-**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛊ʀᴛɪ ʙᴏᴛꜱ 𝁘💋](https://t.me/annu_updates)**
+**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ʀᴏɴᴇʏ ᴍᴜsɪᴄ 𝁘💋](https://t.me/Bindas_life0)**
 '''
 
 
@@ -235,7 +235,7 @@ class Helper(object):
 ❍ /bug :- ʀᴇᴘʟʏ ᴛᴏ ᴍᴇssᴀɢᴇ ғᴏʀ ʙᴜɢ ʀᴇᴘᴏʀᴛ.
 ❍ /repo :- ɢᴇᴛ ᴛᴇᴀᴍ ᴋᴜʀᴜᴠɪ ʀᴇᴘᴏs.
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛊ʀᴛɪ ʙᴏᴛꜱ 𝁘💋](https://t.me/annu_updates)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ʀᴏɴᴇʏ ᴍᴜsɪᴄ 𝁘💋](https://t.me/Bindas_life0)**
 '''
 
 
@@ -271,7 +271,7 @@ class Helper(object):
 ꜱᴇᴛ ᴛʜᴇ ᴀɴᴛɪғʟᴏᴏᴅ ᴀᴄᴛɪᴏɴ ᴛᴏ ᴍᴜᴛᴇ :
 -> /floodmode mute
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛊ʀᴛɪ ʙᴏᴛꜱ 𝁘💋](https://t.me/annu_updates)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ʀᴏɴʀʏ ᴍᴜsɪᴄ 𝁘💋](https://t.me/Bindas_life0)**
 '''
 
     HELP_12 = '''```
@@ -283,7 +283,7 @@ class Helper(object):
 ```
 ⋟ ᴏɴʟʏ ᴀᴅᴍɪɴ ᴄᴀɴ ᴀᴘᴘʀᴏᴠᴇ ᴀɴᴅ ᴅɪsᴍɪss ᴀɴᴅ ᴍᴇss ᴀᴜᴛᴏ ᴅᴇʟᴇᴛᴇ ɪɴ 10 ᴍɪɴᴜᴛᴇs.```
 
-**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛖ɭꝛ᪳ᷱ𝛖𝐯𝛊𝁜ֶָ֪֯ 𝁘💋](https://t.me/kuruvi_botz)**
+**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ʀᴏɴᴇʏ ʙᴏᴛ 𝁘💋](https://t.me/Bindas_life0)**
 '''
 
     
@@ -295,7 +295,7 @@ class Helper(object):
 ❍ /spurge : ᴄʟᴇᴀɴ ɢʀᴏᴜᴘ ᴍsɢ sɪʟᴇɴᴛʟʏ.
 ❍ /del : ʀᴇᴘʟʏ ᴛᴏ ᴀ ᴍsɢ ғᴏʀ ᴅᴇʟᴇᴛᴇ.
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛊ʀᴛɪ ʙᴏᴛꜱ 𝁘💋](https://t.me/annu_updates)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ʀᴏɴᴇʏ ᴍᴜsɪᴄ 𝁘💋](https://t.me/Bindas_life0)**
 '''
 
     
@@ -312,7 +312,7 @@ class Helper(object):
 ❖ ɴᴏᴛᴇ : ɪɴ ᴄᴀꜱᴇ ᴛʜᴇ ᴠᴏɪᴄᴇ ᴄʜᴀᴛ ᴇɴᴅꜱ, ᴛʜᴇ ʙᴏᴛ ᴍᴜꜱᴛ ʜᴀᴠᴇ ᴛʜᴇ ɴᴇᴡ ᴀᴅᴍɪɴ ʀɪɢʜᴛ.
 ```
 
-**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛊ʀᴛɪ ʙᴏᴛꜱ 𝁘💋](https://t.me/annu_updates)**
+**❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ʀᴏɴᴇʏ ᴍᴜsɪᴄ 𝁘💋](https://t.me/Bindas_life0)**
 '''
 
 
@@ -328,7 +328,7 @@ class Helper(object):
 
 ❍ /nightmode : ɪɴʟɪɴᴇ ᴄᴏɴᴛʀᴏʟs ʙᴜᴛᴛᴏɴ ғᴏʀ ɴɪɢʜᴛ ᴍᴏᴅᴇ.
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛊ʀᴛɪ ʙᴏᴛꜱ 𝁘💋](https://t.me/annu_updates)**
+❖ 𝐏ᴏᴡᴇʀᴇᴅ 𝖡ʏ » [ʀᴏɴᴇʏ ᴍᴜsɪᴄ 𝁘💋](https://t.me/Bindas_life0)**
 ''' 
     
     
@@ -347,12 +347,12 @@ class Helper(object):
 ─────────────────────────
 ʙєsᴛ ᴧηᴅ ᴄʜєᴧᴘ ɪη ᴛєʟєɢʀᴧϻ 400-500+ ϻєϻʙєʀs ɪη σηє ᴘʀσϻσᴛɪση ɢυʀᴧηᴛєє...
 ─────────────────────────
-❍ ᴄσηᴛᴧᴄᴛ - [ᡣ𐭩 ེ𝚱𝛊ʀᴛɪ ʙᴏᴛꜱ 𝁘💋](@Only_badnam)
+❍ ᴄσηᴛᴧᴄᴛ - [ʀᴏɴᴇʏ ᴍᴜsɪᴄ 𝁘💋](@lll_VIP_TABAHI_KING_OF_TG_lll)
 ─────────────────────────**
 '''
     HELP_ABOUT = '''
 **─────────────────────
- ᴡєʟᴄσϻє ᴛσ ˹[ᡣ𐭩 ེ𝚱𝛊ʀᴛɪ ʙᴏᴛꜱ 𝁘💋](https://t.me/annu_updates)˼ sᴛᴧᴛυs
+ ᴡєʟᴄσϻє ᴛσ ˹[ʀᴏɴᴇʏ ᴍᴜsɪᴄ 𝁘💋](https://t.me/Bindas_life0)˼ sᴛᴧᴛυs
 ──────────────────────
    ❖ │ ʀєᴧʟ ᴛɪϻє ʙσᴛ's sᴛᴧᴛυs │❖
 ──────────────────────
@@ -365,11 +365,11 @@ class Helper(object):
 ╭⎋ [ʙᴀᴋᴀ ꭙ ᴄʜᴧᴛ](https://t.me/annu_updates) : ᴧʟɪᴠє 
 ╰⊚ υsᴧɢє : 24 ʜʀs | ᴧssɪsᴛᴧηᴛs : 01
 ──────────────────────
-⊚ ʙσᴛ sᴛᴧᴛυs & ϻσʀє ʙσᴛs - [ᴄʟɪᴄᴋ ʜєʀє](https://t.me/kuruvi_botz)
+⊚ ʙσᴛ sᴛᴧᴛυs & ϻσʀє ʙσᴛs - [ᴄʟɪᴄᴋ ʜєʀє](https://t.me/Tabahi_update_bot)
 ──────────────────────
 ⊚ ʟᴧsᴛ ᴄʜєᴄᴋєᴅ ση  : `19.01.2026`
 ──────────────────────
-❍ 𝐏ᴏᴡєʀєᴅ 𝖡ʏ » [ᡣ𐭩 ེ𝚱𝛊ʀᴛɪ ʙᴏᴛꜱ 𝁘💋](https://t.me/kuruvi_botz)
+❍ 𝐏ᴏᴡєʀєᴅ 𝖡ʏ » [ʀᴏɴᴇʏ ᴍᴜsɪᴄ 𝁘💋](https://t.me/Tabahi_update_bot)
 ──────────────────────**
 '''
     HELP_ALLBOT = '''
@@ -385,12 +385,12 @@ class Helper(object):
 ● ηᴏ ʟᴀɢ ɪssᴜєs ηᴏ ᴧᴅs ηᴏ ʙᴜɢs.
 ● sᴜᴘᴘᴏʀᴛ ᴧʟʟ ᴛɪϻє sᴛᴧʏ ᴡɪᴛʜ ᴜs.
 ──────────────────────
-❖ υᴘᴅᴧᴛєs ᴄʜᴧηηєʟ » [ᴋɪʀᴛɪ-ᴜᴘᴅᴧᴛєs](https://t.me/annu_updates)
-❖ sυᴘᴘσʀᴛ ᴄʜᴧᴛ » [ᴋɪʀᴛɪ-sυᴘᴘσʀᴛ](https://t.me/annu_support)
+❖ υᴘᴅᴧᴛєs ᴄʜᴧηηєʟ » [ʀᴏɴʀʏ-ᴜᴘᴅᴧᴛєs](https://t.me/Bindas_life0)
+❖ sυᴘᴘσʀᴛ ᴄʜᴧᴛ » [ʀᴏɴᴇʏ-sυᴘᴘσʀᴛ](https://t.me/Tabahi_update_bot)
 ❖ ʀᴇᴘᴏ ʟɪηᴋ » [ᴄʟɪᴄᴋ-ʜᴇʀᴇ](https://files.catbox.moe/gcr9uk.mp4)
 ──────────────────────
-➤ ʙσᴛ sᴛᴧᴛυs & ϻσʀє ʙσᴛs - [ᴄʟɪᴄᴋ ʜєʀє](https://t.me/annu_updates)
-➤ ᴘᴧɪᴅ ᴘʀσϻσᴛɪση :- [ᴄσηᴛᴧᴄᴛ ʜєʀє](@Only_badnam)
+➤ ʙσᴛ sᴛᴧᴛυs & ϻσʀє ʙσᴛs - [ᴄʟɪᴄᴋ ʜєʀє](https://t.me/Bindas_life0)
+➤ ᴘᴧɪᴅ ᴘʀσϻσᴛɪση :- [ᴄσηᴛᴧᴄᴛ ʜєʀє](@lll_VIP_TABAHI_KING_OF_TG_lll)
 ──────────────────────**
 
 '''
