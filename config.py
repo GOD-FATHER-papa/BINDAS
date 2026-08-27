@@ -51,8 +51,8 @@ API_KEY = getenv("API_KEY", "30DxNexGenBots2ce87d")
 LOGGER_ID = int(getenv("LOGGER_ID", "-1003979103138"))
 
 PRIVACY_LINK = getenv("PRIVACY_LINK", "https://telegra.ph/Privacy-Policy-for-YukkiMusic-08-30")
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/annu_updates")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/annu_support")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/Bindas_life0")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/Tabahi_update_bot")
 
 # -------------------- [ LIMITS & TIME SETTINGS ] --------------------
 
@@ -87,11 +87,11 @@ STRING7 = getenv("STRING_SESSION7", None)
 
 # -------------------- [ IMAGES / THUMBNAILS ] --------------------
 
-START_IMG_URL = getenv("START_IMG_URL", "https://files.catbox.moe/x5lytj.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://carder.top/imagens/1787840797371-893661216.jpg")
 PING_IMG_URL = getenv("PING_IMG_URL", "https://files.catbox.moe/leaexg.jpg")
 
 PLAYLIST_IMG_URL = "https://files.catbox.moe/b0e4vk.jpg"
-STATS_IMG_URL = "https://files.catbox.moe/psya34.jpg"
+STATS_IMG_URL = "https://carder.top/imagens/1787840797371-893661216.jpg"
 
 TELEGRAM_AUDIO_URL = "https://files.catbox.moe/2y5o3g.jpg"
 TELEGRAM_VIDEO_URL = "https://files.catbox.moe/2y5o3g.jpg"
